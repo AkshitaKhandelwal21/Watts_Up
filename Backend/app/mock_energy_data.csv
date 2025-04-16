@@ -1,0 +1,101 @@
+timestamp,appliance,duration_hrs,room,power_usage_kWh,estimated_cost,outside_temperature,label
+2025-04-07 7:00,Heater,2,Living Room,1.47,8.82,20,Optimal
+2025-04-07 18:00,TV,1,Kitchen,1.11,6.66,25,Optimal
+2025-04-07 19:00,TV,3,Bedroom,3.82,22.92,20,Optimal
+2025-04-07 12:00,Microwave,1,Living Room,0.37,2.22,28,Optimal
+2025-04-07 16:00,Microwave,2,Kitchen,0.88,5.28,20,Optimal
+2025-04-07 16:00,AC,3,Living Room,1.51,9.06,35,Optimal
+2025-04-07 9:00,TV,3,Bedroom,2.35,14.1,28,Optimal
+2025-04-07 1:00,Heater,5,Living Room,1.65,9.9,18,Wasteful
+2025-04-07 19:00,TV,1,Kitchen,1.75,10.5,27,Optimal
+2025-04-07 11:00,TV,2,Living Room,2.13,12.78,31,Optimal
+2025-04-07 21:00,TV,2,Living Room,0.73,4.38,23,Optimal
+2025-04-07 14:00,Heater,1,Living Room,1.29,7.74,13,Optimal
+2025-04-07 19:00,TV,1,Bedroom,1.38,8.28,29,Optimal
+2025-04-07 20:00,AC,3,Kitchen,4.37,26.22,36,Optimal
+2025-04-07 17:00,Heater,2,Living Room,1.81,10.86,13,Optimal
+2025-04-07 12:00,Microwave,1,Kitchen,0.62,3.72,21,Optimal
+2025-04-07 19:00,TV,2,Living Room,2.86,17.16,27,Optimal
+2025-04-07 12:00,TV,1,Kitchen,1.22,7.32,27,Optimal
+2025-04-07 1:00,AC,6,Kitchen,9.64,57.84,35,Wasteful
+2025-04-07 2:00,AC,4,Kitchen,2.26,13.56,42,Wasteful
+2025-04-07 17:00,TV,3,Bedroom,2.46,14.76,23,Optimal
+2025-04-07 20:00,TV,1,Kitchen,1.15,6.9,22,Optimal
+2025-04-07 21:00,TV,2,Living Room,1.74,10.44,31,Optimal
+2025-04-07 19:00,TV,1,Kitchen,1.78,10.68,28,Optimal
+2025-04-07 2:00,Heater,4,Bedroom,5.1,30.6,18,Wasteful
+2025-04-07 2:00,Heater,5,Kitchen,3.22,19.32,18,Wasteful
+2025-04-07 14:00,Microwave,1,Living Room,1.59,9.54,27,Optimal
+2025-04-07 20:00,TV,2,Living Room,2.47,14.82,30,Optimal
+2025-04-07 7:00,AC,3,Living Room,3.71,22.26,39,Optimal
+2025-04-07 18:00,AC,1,Kitchen,1.19,7.14,42,Optimal
+2025-04-07 22:00,AC,1,Living Room,1.25,7.5,32,Optimal
+2025-04-07 18:00,Microwave,2,Bedroom,3.21,19.26,27,Optimal
+2025-04-07 3:00,Heater,4,Kitchen,6.14,36.84,11,Wasteful
+2025-04-07 20:00,TV,1,Kitchen,1.64,9.84,22,Optimal
+2025-04-07 2:00,AC,5,Living Room,4.34,26.04,39,Wasteful
+2025-04-07 21:00,Heater,2,Kitchen,1.06,6.36,17,Optimal
+2025-04-07 19:00,TV,2,Bedroom,3.58,21.48,30,Optimal
+2025-04-07 3:00,Heater,6,Living Room,7.2,43.2,11,Wasteful
+2025-04-07 22:00,TV,2,Kitchen,3.21,19.26,21,Optimal
+2025-04-07 15:00,Microwave,2,Kitchen,2.19,13.14,28,Optimal
+2025-04-07 19:00,TV,1,Kitchen,0.53,3.18,27,Optimal
+2025-04-07 3:00,AC,5,Living Room,4.71,28.26,34,Wasteful
+2025-04-07 1:00,Heater,5,Bedroom,6.28,37.68,10,Wasteful
+2025-04-07 19:00,TV,1,Living Room,0.6,3.6,35,Optimal
+2025-04-07 21:00,TV,2,Kitchen,3.55,21.3,32,Optimal
+2025-04-07 19:00,TV,1,Bedroom,1.73,10.38,22,Optimal
+2025-04-07 17:00,Heater,2,Living Room,3.57,21.42,17,Optimal
+2025-04-07 14:00,TV,3,Bedroom,5.25,31.5,32,Optimal
+2025-04-07 2:00,Heater,6,Bedroom,9.34,56.04,17,Wasteful
+2025-04-07 21:00,TV,2,Kitchen,0.96,5.76,34,Optimal
+2025-04-07 2:00,Heater,4,Living Room,3.82,22.92,10,Wasteful
+2025-04-07 22:00,TV,1,Bedroom,1.32,7.92,24,Optimal
+2025-04-07 20:00,TV,2,Bedroom,3.27,19.62,23,Optimal
+2025-04-07 15:00,AC,3,Living Room,5.31,31.86,41,Optimal
+2025-04-07 13:00,TV,1,Living Room,1.36,8.16,33,Optimal
+2025-04-07 21:00,TV,2,Kitchen,0.66,3.96,35,Optimal
+2025-04-07 21:00,Heater,1,Bedroom,0.41,2.46,20,Optimal
+2025-04-07 18:00,AC,2,Bedroom,2.8,16.8,33,Optimal
+2025-04-07 10:00,TV,2,Living Room,1.18,7.08,24,Optimal
+2025-04-07 14:00,Heater,2,Bedroom,2.83,16.98,11,Optimal
+2025-04-07 1:00,Heater,6,Living Room,7.75,46.5,19,Wasteful
+2025-04-07 20:00,TV,2,Bedroom,3.32,19.92,27,Optimal
+2025-04-07 20:00,TV,2,Bedroom,1.33,7.98,21,Optimal
+2025-04-07 3:00,Heater,6,Kitchen,8.86,53.16,18,Wasteful
+2025-04-07 19:00,Microwave,1,Living Room,1.61,9.66,20,Optimal
+2025-04-07 1:00,AC,5,Bedroom,4.66,27.96,31,Wasteful
+2025-04-07 17:00,Microwave,3,Bedroom,4.29,25.74,23,Optimal
+2025-04-07 2:00,Heater,4,Kitchen,5.72,34.32,19,Wasteful
+2025-04-07 1:00,Heater,5,Bedroom,1.76,10.56,16,Wasteful
+2025-04-07 2:00,AC,6,Living Room,2.38,14.28,33,Wasteful
+2025-04-07 12:00,Microwave,3,Bedroom,2.53,15.18,31,Optimal
+2025-04-07 17:00,Heater,2,Living Room,1.33,7.98,16,Optimal
+2025-04-07 19:00,Heater,2,Kitchen,1.99,11.94,19,Optimal
+2025-04-07 14:00,Microwave,2,Bedroom,2.99,17.94,33,Optimal
+2025-04-07 1:00,Heater,6,Kitchen,9.61,57.66,11,Wasteful
+2025-04-07 1:00,AC,4,Bedroom,5.54,33.24,39,Wasteful
+2025-04-07 7:00,TV,2,Living Room,2.91,17.46,35,Optimal
+2025-04-07 20:00,TV,1,Bedroom,0.79,4.74,21,Optimal
+2025-04-07 2:00,Heater,5,Kitchen,8.83,52.98,16,Wasteful
+2025-04-07 21:00,TV,2,Kitchen,0.8,4.8,32,Optimal
+2025-04-07 21:00,TV,1,Living Room,1.24,7.44,31,Optimal
+2025-04-07 2:00,AC,4,Living Room,1.57,9.42,30,Wasteful
+2025-04-07 3:00,AC,5,Bedroom,6.83,40.98,35,Wasteful
+2025-04-07 20:00,TV,2,Kitchen,2.59,15.54,31,Optimal
+2025-04-07 20:00,TV,2,Living Room,3.59,21.54,24,Optimal
+2025-04-07 2:00,AC,6,Kitchen,9.44,56.64,31,Wasteful
+2025-04-07 21:00,TV,1,Kitchen,0.62,3.72,32,Optimal
+2025-04-07 2:00,AC,6,Living Room,3.17,19.02,32,Wasteful
+2025-04-07 2:00,AC,4,Kitchen,4.43,26.58,31,Wasteful
+2025-04-07 2:00,Heater,6,Living Room,6.25,37.5,20,Wasteful
+2025-04-07 3:00,Heater,4,Kitchen,1.31,7.86,20,Wasteful
+2025-04-07 11:00,AC,1,Living Room,1.49,8.94,31,Optimal
+2025-04-07 19:00,TV,2,Bedroom,3.58,21.48,31,Optimal
+2025-04-07 7:00,AC,3,Kitchen,4.48,26.88,41,Optimal
+2025-04-07 21:00,TV,1,Living Room,1.15,6.9,22,Optimal
+2025-04-07 17:00,Heater,3,Living Room,3.82,22.92,13,Optimal
+2025-04-07 3:00,Heater,6,Kitchen,2.98,17.88,16,Wasteful
+2025-04-07 8:00,AC,3,Kitchen,4.0,24.0,34,Optimal
+2025-04-07 3:00,Heater,4,Kitchen,7.01,42.06,10,Wasteful
+2025-04-07 7:00,AC,3,Kitchen,5.13,30.78,40,Optimal
