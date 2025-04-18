@@ -1,5 +1,5 @@
 
-from dashboard import get_df
+from app.dashboard import get_df
 from fastapi import APIRouter
 
 kpi = APIRouter()
