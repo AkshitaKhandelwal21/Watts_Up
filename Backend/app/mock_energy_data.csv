@@ -1,101 +1,1001 @@
-timestamp,appliance,duration_hrs,room,power_usage_kWh,estimated_cost,outside_temperature,label
-2025-04-07 7:00,Heater,2,Living Room,1.47,8.82,20,Optimal
-2025-04-07 18:00,TV,1,Kitchen,1.11,6.66,25,Optimal
-2025-04-07 19:00,TV,3,Bedroom,3.82,22.92,20,Optimal
-2025-04-07 12:00,Microwave,1,Living Room,0.37,2.22,28,Optimal
-2025-04-07 16:00,Microwave,2,Kitchen,0.88,5.28,20,Optimal
-2025-04-07 16:00,AC,3,Living Room,1.51,9.06,35,Optimal
-2025-04-07 9:00,TV,3,Bedroom,2.35,14.1,28,Optimal
-2025-04-07 1:00,Heater,5,Living Room,1.65,9.9,18,Wasteful
-2025-04-07 19:00,TV,1,Kitchen,1.75,10.5,27,Optimal
-2025-04-07 11:00,TV,2,Living Room,2.13,12.78,31,Optimal
-2025-04-07 21:00,TV,2,Living Room,0.73,4.38,23,Optimal
-2025-04-07 14:00,Heater,1,Living Room,1.29,7.74,13,Optimal
-2025-04-07 19:00,TV,1,Bedroom,1.38,8.28,29,Optimal
-2025-04-07 20:00,AC,3,Kitchen,4.37,26.22,36,Optimal
-2025-04-07 17:00,Heater,2,Living Room,1.81,10.86,13,Optimal
-2025-04-07 12:00,Microwave,1,Kitchen,0.62,3.72,21,Optimal
-2025-04-07 19:00,TV,2,Living Room,2.86,17.16,27,Optimal
-2025-04-07 12:00,TV,1,Kitchen,1.22,7.32,27,Optimal
-2025-04-07 1:00,AC,6,Kitchen,9.64,57.84,35,Wasteful
-2025-04-07 2:00,AC,4,Kitchen,2.26,13.56,42,Wasteful
-2025-04-07 17:00,TV,3,Bedroom,2.46,14.76,23,Optimal
-2025-04-07 20:00,TV,1,Kitchen,1.15,6.9,22,Optimal
-2025-04-07 21:00,TV,2,Living Room,1.74,10.44,31,Optimal
-2025-04-07 19:00,TV,1,Kitchen,1.78,10.68,28,Optimal
-2025-04-07 2:00,Heater,4,Bedroom,5.1,30.6,18,Wasteful
-2025-04-07 2:00,Heater,5,Kitchen,3.22,19.32,18,Wasteful
-2025-04-07 14:00,Microwave,1,Living Room,1.59,9.54,27,Optimal
-2025-04-07 20:00,TV,2,Living Room,2.47,14.82,30,Optimal
-2025-04-07 7:00,AC,3,Living Room,3.71,22.26,39,Optimal
-2025-04-07 18:00,AC,1,Kitchen,1.19,7.14,42,Optimal
-2025-04-07 22:00,AC,1,Living Room,1.25,7.5,32,Optimal
-2025-04-07 18:00,Microwave,2,Bedroom,3.21,19.26,27,Optimal
-2025-04-07 3:00,Heater,4,Kitchen,6.14,36.84,11,Wasteful
-2025-04-07 20:00,TV,1,Kitchen,1.64,9.84,22,Optimal
-2025-04-07 2:00,AC,5,Living Room,4.34,26.04,39,Wasteful
-2025-04-07 21:00,Heater,2,Kitchen,1.06,6.36,17,Optimal
-2025-04-07 19:00,TV,2,Bedroom,3.58,21.48,30,Optimal
-2025-04-07 3:00,Heater,6,Living Room,7.2,43.2,11,Wasteful
-2025-04-07 22:00,TV,2,Kitchen,3.21,19.26,21,Optimal
-2025-04-07 15:00,Microwave,2,Kitchen,2.19,13.14,28,Optimal
-2025-04-07 19:00,TV,1,Kitchen,0.53,3.18,27,Optimal
-2025-04-07 3:00,AC,5,Living Room,4.71,28.26,34,Wasteful
-2025-04-07 1:00,Heater,5,Bedroom,6.28,37.68,10,Wasteful
-2025-04-07 19:00,TV,1,Living Room,0.6,3.6,35,Optimal
-2025-04-07 21:00,TV,2,Kitchen,3.55,21.3,32,Optimal
-2025-04-07 19:00,TV,1,Bedroom,1.73,10.38,22,Optimal
-2025-04-07 17:00,Heater,2,Living Room,3.57,21.42,17,Optimal
-2025-04-07 14:00,TV,3,Bedroom,5.25,31.5,32,Optimal
-2025-04-07 2:00,Heater,6,Bedroom,9.34,56.04,17,Wasteful
-2025-04-07 21:00,TV,2,Kitchen,0.96,5.76,34,Optimal
-2025-04-07 2:00,Heater,4,Living Room,3.82,22.92,10,Wasteful
-2025-04-07 22:00,TV,1,Bedroom,1.32,7.92,24,Optimal
-2025-04-07 20:00,TV,2,Bedroom,3.27,19.62,23,Optimal
-2025-04-07 15:00,AC,3,Living Room,5.31,31.86,41,Optimal
-2025-04-07 13:00,TV,1,Living Room,1.36,8.16,33,Optimal
-2025-04-07 21:00,TV,2,Kitchen,0.66,3.96,35,Optimal
-2025-04-07 21:00,Heater,1,Bedroom,0.41,2.46,20,Optimal
-2025-04-07 18:00,AC,2,Bedroom,2.8,16.8,33,Optimal
-2025-04-07 10:00,TV,2,Living Room,1.18,7.08,24,Optimal
-2025-04-07 14:00,Heater,2,Bedroom,2.83,16.98,11,Optimal
-2025-04-07 1:00,Heater,6,Living Room,7.75,46.5,19,Wasteful
-2025-04-07 20:00,TV,2,Bedroom,3.32,19.92,27,Optimal
-2025-04-07 20:00,TV,2,Bedroom,1.33,7.98,21,Optimal
-2025-04-07 3:00,Heater,6,Kitchen,8.86,53.16,18,Wasteful
-2025-04-07 19:00,Microwave,1,Living Room,1.61,9.66,20,Optimal
-2025-04-07 1:00,AC,5,Bedroom,4.66,27.96,31,Wasteful
-2025-04-07 17:00,Microwave,3,Bedroom,4.29,25.74,23,Optimal
-2025-04-07 2:00,Heater,4,Kitchen,5.72,34.32,19,Wasteful
-2025-04-07 1:00,Heater,5,Bedroom,1.76,10.56,16,Wasteful
-2025-04-07 2:00,AC,6,Living Room,2.38,14.28,33,Wasteful
-2025-04-07 12:00,Microwave,3,Bedroom,2.53,15.18,31,Optimal
-2025-04-07 17:00,Heater,2,Living Room,1.33,7.98,16,Optimal
-2025-04-07 19:00,Heater,2,Kitchen,1.99,11.94,19,Optimal
-2025-04-07 14:00,Microwave,2,Bedroom,2.99,17.94,33,Optimal
-2025-04-07 1:00,Heater,6,Kitchen,9.61,57.66,11,Wasteful
-2025-04-07 1:00,AC,4,Bedroom,5.54,33.24,39,Wasteful
-2025-04-07 7:00,TV,2,Living Room,2.91,17.46,35,Optimal
-2025-04-07 20:00,TV,1,Bedroom,0.79,4.74,21,Optimal
-2025-04-07 2:00,Heater,5,Kitchen,8.83,52.98,16,Wasteful
-2025-04-07 21:00,TV,2,Kitchen,0.8,4.8,32,Optimal
-2025-04-07 21:00,TV,1,Living Room,1.24,7.44,31,Optimal
-2025-04-07 2:00,AC,4,Living Room,1.57,9.42,30,Wasteful
-2025-04-07 3:00,AC,5,Bedroom,6.83,40.98,35,Wasteful
-2025-04-07 20:00,TV,2,Kitchen,2.59,15.54,31,Optimal
-2025-04-07 20:00,TV,2,Living Room,3.59,21.54,24,Optimal
-2025-04-07 2:00,AC,6,Kitchen,9.44,56.64,31,Wasteful
-2025-04-07 21:00,TV,1,Kitchen,0.62,3.72,32,Optimal
-2025-04-07 2:00,AC,6,Living Room,3.17,19.02,32,Wasteful
-2025-04-07 2:00,AC,4,Kitchen,4.43,26.58,31,Wasteful
-2025-04-07 2:00,Heater,6,Living Room,6.25,37.5,20,Wasteful
-2025-04-07 3:00,Heater,4,Kitchen,1.31,7.86,20,Wasteful
-2025-04-07 11:00,AC,1,Living Room,1.49,8.94,31,Optimal
-2025-04-07 19:00,TV,2,Bedroom,3.58,21.48,31,Optimal
-2025-04-07 7:00,AC,3,Kitchen,4.48,26.88,41,Optimal
-2025-04-07 21:00,TV,1,Living Room,1.15,6.9,22,Optimal
-2025-04-07 17:00,Heater,3,Living Room,3.82,22.92,13,Optimal
-2025-04-07 3:00,Heater,6,Kitchen,2.98,17.88,16,Wasteful
-2025-04-07 8:00,AC,3,Kitchen,4.0,24.0,34,Optimal
-2025-04-07 3:00,Heater,4,Kitchen,7.01,42.06,10,Wasteful
-2025-04-07 7:00,AC,3,Kitchen,5.13,30.78,40,Optimal
+timestamp,appliance,duration_hrs,room,power_usage_kWh,estimated_cost,outside_temperature,day,exceeds_threshold
+2025-07-15 09:00:00,Oven,3,Laundry Room,6.78,40.68,168,Tuesday,True
+2025-07-27 03:00:00,Dishwasher,5,Bathroom,6.42,38.52,25,Sunday,True
+2025-07-08 02:00:00,Microwave,2,Bedroom,1.74,10.44,30,Tuesday,False
+2025-04-29 10:00:00,Refrigerator,1,Bedroom,0.98,5.88,4,Tuesday,False
+2025-04-28 15:00:00,Heater,2,Bedroom,4.81,28.86,15,Monday,False
+2025-05-22 15:00:00,Refrigerator,4,Laundry Room,2.98,17.88,7,Thursday,True
+2025-06-17 04:00:00,Oven,4,Living Room,7.75,46.5,179,Tuesday,True
+2025-05-26 02:00:00,TV,2,Bathroom,2.92,17.52,23,Monday,True
+2025-06-14 12:00:00,Microwave,4,Bathroom,3.51,21.06,30,Saturday,True
+2025-04-20 22:00:00,Washing Machine,1,Laundry Room,1.21,7.26,23,Sunday,False
+2025-05-12 19:00:00,Washing Machine,5,Dining Room,7.43,44.58,33,Monday,True
+2025-05-25 22:00:00,Refrigerator,5,Bathroom,4.45,26.7,8,Sunday,True
+2025-07-03 23:00:00,TV,4,Bathroom,2.8,16.8,26,Thursday,True
+2025-05-04 10:00:00,Washing Machine,5,Kitchen,5.9,35.4,24,Sunday,True
+2025-05-03 03:00:00,Light,6,Bathroom,0.72,4.32,33,Saturday,True
+2025-05-29 15:00:00,Oven,1,Kitchen,1.86,11.16,113,Thursday,False
+2025-04-20 04:00:00,Heater,1,Kitchen,2.03,12.18,15,Sunday,False
+2025-04-26 20:00:00,Fan,6,Living Room,2.28,13.68,32,Saturday,True
+2025-06-10 01:00:00,Light,5,Bathroom,0.38,2.28,21,Tuesday,False
+2025-07-22 17:00:00,Dishwasher,4,Dining Room,4.83,28.98,21,Tuesday,True
+2025-07-11 23:00:00,Refrigerator,4,Laundry Room,2.8,16.8,6,Friday,True
+2025-04-21 07:00:00,Heater,2,Dining Room,3.9,23.4,12,Monday,False
+2025-04-18 05:00:00,Light,4,Bathroom,0.54,3.24,25,Friday,False
+2025-06-16 15:00:00,Heater,6,Bathroom,11.72,70.32,13,Monday,True
+2025-05-08 22:00:00,Refrigerator,3,Laundry Room,2.6,15.6,5,Thursday,True
+2025-07-25 08:00:00,Refrigerator,3,Laundry Room,2.62,15.72,6,Friday,True
+2025-06-07 11:00:00,Light,3,Living Room,0.2,1.2,29,Saturday,False
+2025-05-03 04:00:00,Microwave,4,Bathroom,1.34,8.04,31,Saturday,False
+2025-07-04 06:00:00,TV,1,Living Room,0.69,4.14,27,Friday,False
+2025-07-25 16:00:00,AC,5,Kitchen,16.5,99.0,39,Friday,True
+2025-06-25 22:00:00,Microwave,2,Bedroom,1.92,11.52,32,Wednesday,False
+2025-06-03 07:00:00,TV,5,Bathroom,7.46,44.76,25,Tuesday,True
+2025-06-18 06:00:00,Oven,4,Living Room,7.5,45.0,244,Wednesday,True
+2025-05-28 20:00:00,Light,6,Dining Room,0.95,5.7,34,Wednesday,True
+2025-07-15 02:00:00,Fan,6,Laundry Room,1.65,9.9,25,Tuesday,True
+2025-06-06 10:00:00,Light,3,Living Room,0.38,2.28,34,Friday,False
+2025-05-27 03:00:00,Refrigerator,2,Laundry Room,1.76,10.56,6,Tuesday,False
+2025-07-12 04:00:00,Heater,4,Bedroom,6.7,40.2,14,Saturday,True
+2025-04-25 20:00:00,Dishwasher,4,Living Room,5.24,31.44,40,Friday,True
+2025-07-14 14:00:00,Microwave,5,Laundry Room,3.74,22.44,25,Monday,True
+2025-06-15 05:00:00,Refrigerator,6,Laundry Room,4.19,25.14,6,Sunday,True
+2025-05-21 11:00:00,Fan,5,Kitchen,2.44,14.64,24,Wednesday,True
+2025-06-16 10:00:00,Washing Machine,5,Kitchen,5.96,35.76,35,Monday,True
+2025-06-22 17:00:00,AC,2,Kitchen,6.11,36.66,42,Sunday,False
+2025-07-10 11:00:00,TV,6,Laundry Room,7.88,47.28,20,Thursday,True
+2025-05-05 17:00:00,Light,1,Kitchen,0.2,1.2,35,Monday,False
+2025-05-31 06:00:00,Microwave,4,Laundry Room,1.86,11.16,28,Saturday,False
+2025-05-14 05:00:00,Microwave,3,Bedroom,1.33,7.98,22,Wednesday,False
+2025-04-22 04:00:00,Refrigerator,6,Laundry Room,4.73,28.38,6,Tuesday,True
+2025-06-09 11:00:00,TV,3,Bathroom,2.11,12.66,29,Monday,False
+2025-06-20 16:00:00,Light,6,Bathroom,0.89,5.34,21,Friday,True
+2025-07-05 08:00:00,Heater,6,Laundry Room,9.27,55.62,14,Saturday,True
+2025-07-05 03:00:00,TV,3,Dining Room,2.17,13.02,24,Saturday,False
+2025-06-03 11:00:00,Dishwasher,2,Bathroom,2.0,12.0,39,Tuesday,False
+2025-05-19 08:00:00,Heater,2,Bathroom,3.02,18.12,12,Monday,False
+2025-06-02 18:00:00,Microwave,5,Bedroom,1.52,9.12,33,Monday,False
+2025-04-25 06:00:00,AC,5,Living Room,12.83,76.98,30,Friday,True
+2025-06-06 11:00:00,Washing Machine,2,Living Room,2.84,17.04,37,Friday,False
+2025-06-13 09:00:00,Oven,3,Dining Room,7.27,43.62,201,Friday,True
+2025-05-08 14:00:00,Refrigerator,3,Kitchen,2.01,12.06,7,Thursday,True
+2025-07-06 00:00:00,AC,3,Laundry Room,9.97,59.82,30,Sunday,True
+2025-04-23 23:00:00,Oven,4,Dining Room,6.04,36.24,147,Wednesday,True
+2025-05-10 10:00:00,TV,1,Dining Room,1.11,6.66,27,Saturday,False
+2025-04-20 14:00:00,Refrigerator,3,Bedroom,2.66,15.96,4,Sunday,True
+2025-05-29 14:00:00,Light,5,Dining Room,0.48,2.88,23,Thursday,False
+2025-05-21 16:00:00,Light,4,Living Room,0.34,2.04,33,Wednesday,False
+2025-07-06 04:00:00,Oven,1,Living Room,2.94,17.64,239,Sunday,False
+2025-04-27 22:00:00,AC,1,Bedroom,3.41,20.46,39,Sunday,False
+2025-05-27 17:00:00,Oven,6,Bedroom,13.16,78.96,105,Tuesday,True
+2025-05-28 12:00:00,AC,1,Bedroom,2.67,16.02,37,Wednesday,False
+2025-04-28 00:00:00,Heater,4,Living Room,9.55,57.3,10,Monday,True
+2025-06-24 21:00:00,Light,3,Kitchen,0.42,2.52,35,Tuesday,False
+2025-07-19 17:00:00,Light,3,Bedroom,0.3,1.8,35,Saturday,False
+2025-05-09 07:00:00,TV,2,Bathroom,2.58,15.48,24,Friday,True
+2025-06-18 03:00:00,AC,1,Dining Room,2.86,17.16,42,Wednesday,False
+2025-06-23 12:00:00,Washing Machine,3,Kitchen,3.2,19.2,30,Monday,False
+2025-07-14 01:00:00,TV,4,Bedroom,5.03,30.18,34,Monday,True
+2025-06-18 16:00:00,Dishwasher,3,Dining Room,4.5,27.0,23,Wednesday,True
+2025-05-27 14:00:00,Light,3,Bathroom,0.46,2.76,26,Tuesday,False
+2025-05-15 01:00:00,Microwave,4,Kitchen,2.41,14.46,28,Thursday,True
+2025-07-15 18:00:00,Refrigerator,1,Bathroom,0.78,4.68,5,Tuesday,False
+2025-04-21 18:00:00,Refrigerator,1,Bedroom,0.9,5.4,7,Monday,False
+2025-06-05 03:00:00,Microwave,1,Bathroom,0.73,4.38,33,Thursday,False
+2025-05-31 16:00:00,Light,6,Bedroom,0.35,2.1,30,Saturday,False
+2025-06-18 00:00:00,Fan,1,Bedroom,0.48,2.88,29,Wednesday,False
+2025-06-29 08:00:00,Light,5,Dining Room,0.52,3.12,30,Sunday,False
+2025-05-06 09:00:00,Microwave,4,Laundry Room,2.65,15.9,32,Tuesday,True
+2025-07-16 14:00:00,Light,1,Bedroom,0.09,0.54,30,Wednesday,False
+2025-06-08 07:00:00,TV,5,Dining Room,5.16,30.96,34,Sunday,True
+2025-06-21 00:00:00,Refrigerator,3,Bedroom,2.79,16.74,5,Saturday,True
+2025-06-21 09:00:00,Microwave,5,Living Room,3.27,19.62,23,Saturday,True
+2025-07-09 08:00:00,Microwave,1,Laundry Room,0.3,1.8,33,Wednesday,False
+2025-05-06 13:00:00,Light,3,Dining Room,0.54,3.24,24,Tuesday,False
+2025-05-03 23:00:00,Washing Machine,3,Living Room,4.38,26.28,21,Saturday,True
+2025-06-20 00:00:00,Fan,3,Dining Room,0.49,2.94,24,Friday,False
+2025-05-12 14:00:00,Light,1,Living Room,0.07,0.42,33,Monday,False
+2025-05-03 17:00:00,Light,2,Kitchen,0.3,1.8,26,Saturday,False
+2025-05-23 16:00:00,Dishwasher,6,Kitchen,7.12,42.72,22,Friday,True
+2025-04-18 00:00:00,Heater,3,Laundry Room,4.75,28.5,16,Friday,False
+2025-07-01 04:00:00,Oven,4,Bedroom,11.97,71.82,161,Tuesday,True
+2025-05-08 22:00:00,Light,6,Bedroom,1.16,6.96,20,Thursday,True
+2025-06-24 08:00:00,Light,1,Kitchen,0.17,1.02,22,Tuesday,False
+2025-07-08 00:00:00,Washing Machine,5,Dining Room,6.28,37.68,26,Tuesday,True
+2025-04-24 01:00:00,AC,4,Living Room,12.82,76.92,34,Thursday,True
+2025-06-27 12:00:00,Microwave,3,Bathroom,1.56,9.36,25,Friday,False
+2025-07-12 13:00:00,Microwave,4,Bathroom,1.54,9.24,32,Saturday,False
+2025-06-10 05:00:00,Oven,6,Bathroom,15.75,94.5,129,Tuesday,True
+2025-07-11 11:00:00,Microwave,2,Bedroom,1.48,8.88,21,Friday,False
+2025-07-17 11:00:00,Oven,6,Living Room,15.67,94.02,239,Thursday,True
+2025-06-03 17:00:00,AC,5,Bedroom,14.3,85.8,30,Tuesday,True
+2025-05-05 22:00:00,Refrigerator,6,Bedroom,4.78,28.68,8,Monday,True
+2025-06-20 14:00:00,Heater,2,Bathroom,4.98,29.88,11,Friday,False
+2025-04-24 21:00:00,AC,6,Laundry Room,18.07,108.42,31,Thursday,True
+2025-07-17 20:00:00,Dishwasher,5,Living Room,6.51,39.06,44,Thursday,True
+2025-06-27 03:00:00,AC,1,Bedroom,3.36,20.16,42,Friday,False
+2025-05-19 20:00:00,Refrigerator,4,Laundry Room,3.5,21.0,6,Monday,True
+2025-06-10 00:00:00,Heater,5,Laundry Room,8.41,50.46,14,Tuesday,True
+2025-05-28 14:00:00,Heater,6,Living Room,10.27,61.62,15,Wednesday,True
+2025-06-20 20:00:00,Fan,6,Bathroom,2.29,13.74,35,Friday,True
+2025-06-14 18:00:00,Refrigerator,4,Bedroom,3.8,22.8,7,Saturday,True
+2025-07-20 12:00:00,Washing Machine,6,Dining Room,10.19,61.14,28,Sunday,True
+2025-05-17 17:00:00,Washing Machine,5,Kitchen,6.19,37.14,32,Saturday,True
+2025-07-01 00:00:00,Dishwasher,6,Bathroom,8.08,48.48,44,Tuesday,True
+2025-04-18 23:00:00,Washing Machine,5,Bedroom,8.02,48.12,40,Friday,True
+2025-04-21 22:00:00,Oven,5,Living Room,11.07,66.42,101,Monday,True
+2025-07-05 03:00:00,Microwave,2,Kitchen,1.57,9.42,25,Saturday,False
+2025-06-02 01:00:00,Dishwasher,5,Bathroom,6.95,41.7,41,Monday,True
+2025-05-06 05:00:00,Washing Machine,3,Bedroom,4.82,28.92,31,Tuesday,True
+2025-06-26 00:00:00,Light,4,Bathroom,0.58,3.48,33,Thursday,False
+2025-05-26 17:00:00,Oven,6,Kitchen,13.63,81.78,199,Monday,True
+2025-06-15 23:00:00,Light,1,Kitchen,0.18,1.08,24,Sunday,False
+2025-05-28 11:00:00,TV,1,Laundry Room,1.16,6.96,25,Wednesday,False
+2025-04-21 06:00:00,TV,3,Dining Room,1.63,9.78,33,Monday,False
+2025-07-06 16:00:00,Dishwasher,2,Bedroom,2.34,14.04,20,Sunday,False
+2025-06-24 03:00:00,TV,4,Living Room,5.97,35.82,28,Tuesday,True
+2025-05-27 20:00:00,TV,4,Laundry Room,5.82,34.92,21,Tuesday,True
+2025-05-23 12:00:00,Microwave,6,Bathroom,2.79,16.74,21,Friday,True
+2025-06-14 01:00:00,Heater,2,Bathroom,4.73,28.38,18,Saturday,False
+2025-05-19 05:00:00,TV,1,Kitchen,1.36,8.16,24,Monday,False
+2025-07-12 11:00:00,Washing Machine,5,Living Room,8.99,53.94,24,Saturday,True
+2025-07-11 03:00:00,Microwave,4,Living Room,2.23,13.38,34,Friday,True
+2025-05-05 06:00:00,Washing Machine,5,Bedroom,8.51,51.06,30,Monday,True
+2025-05-07 11:00:00,Fan,2,Kitchen,0.29,1.74,28,Wednesday,False
+2025-05-31 13:00:00,Heater,6,Laundry Room,12.36,74.16,17,Saturday,True
+2025-07-27 19:00:00,Refrigerator,1,Living Room,0.84,5.04,5,Sunday,False
+2025-06-28 11:00:00,Dishwasher,4,Bathroom,5.53,33.18,29,Saturday,True
+2025-05-14 13:00:00,AC,2,Bathroom,5.8,34.8,38,Wednesday,False
+2025-07-05 14:00:00,AC,3,Bedroom,9.25,55.5,42,Saturday,True
+2025-06-07 01:00:00,Heater,5,Laundry Room,8.83,52.98,17,Saturday,True
+2025-05-16 08:00:00,Microwave,6,Laundry Room,2.96,17.76,20,Friday,True
+2025-05-07 16:00:00,Heater,3,Dining Room,4.71,28.26,19,Wednesday,False
+2025-07-22 05:00:00,Microwave,6,Bathroom,5.57,33.42,31,Tuesday,True
+2025-05-24 17:00:00,Dishwasher,3,Bedroom,3.71,22.26,40,Saturday,True
+2025-05-05 18:00:00,Fan,6,Bathroom,1.16,6.96,24,Monday,True
+2025-06-18 13:00:00,Fan,4,Bathroom,1.57,9.42,26,Wednesday,True
+2025-06-28 09:00:00,Washing Machine,3,Bedroom,5.99,35.94,21,Saturday,True
+2025-07-20 07:00:00,TV,3,Laundry Room,1.69,10.14,32,Sunday,False
+2025-04-26 07:00:00,Heater,2,Bedroom,4.06,24.36,11,Saturday,False
+2025-06-28 19:00:00,Oven,5,Bathroom,10.59,63.54,146,Saturday,True
+2025-05-10 23:00:00,Light,2,Laundry Room,0.24,1.44,30,Saturday,False
+2025-05-31 19:00:00,Fan,3,Kitchen,1.46,8.76,21,Saturday,True
+2025-05-23 22:00:00,Microwave,2,Bedroom,1.49,8.94,33,Friday,False
+2025-05-27 18:00:00,Heater,6,Living Room,10.84,65.04,19,Tuesday,True
+2025-05-08 21:00:00,Heater,3,Living Room,5.09,30.54,14,Thursday,False
+2025-07-08 08:00:00,Heater,3,Bathroom,7.36,44.16,12,Tuesday,True
+2025-05-10 03:00:00,Fan,1,Living Room,0.41,2.46,25,Saturday,False
+2025-06-26 13:00:00,Heater,4,Kitchen,7.91,47.46,14,Thursday,True
+2025-06-22 20:00:00,AC,5,Bedroom,13.53,81.18,30,Sunday,True
+2025-06-16 02:00:00,Microwave,3,Bathroom,2.54,15.24,22,Monday,True
+2025-06-07 10:00:00,Washing Machine,4,Bedroom,5.49,32.94,29,Saturday,True
+2025-05-16 07:00:00,Microwave,6,Laundry Room,2.5,15.0,22,Friday,True
+2025-05-23 06:00:00,Washing Machine,4,Dining Room,7.25,43.5,40,Friday,True
+2025-06-14 23:00:00,Heater,3,Laundry Room,7.32,43.92,11,Saturday,True
+2025-07-05 03:00:00,Light,5,Living Room,0.26,1.56,20,Saturday,False
+2025-05-02 22:00:00,Light,3,Dining Room,0.45,2.7,26,Friday,False
+2025-07-21 18:00:00,TV,4,Bathroom,5.28,31.68,21,Monday,True
+2025-05-06 01:00:00,Light,6,Dining Room,0.36,2.16,25,Tuesday,False
+2025-06-10 03:00:00,Washing Machine,1,Dining Room,1.24,7.44,37,Tuesday,False
+2025-07-07 07:00:00,Refrigerator,1,Dining Room,0.81,4.86,4,Monday,False
+2025-05-28 02:00:00,Washing Machine,5,Bedroom,5.02,30.12,20,Wednesday,True
+2025-06-11 09:00:00,Dishwasher,5,Kitchen,7.04,42.24,21,Wednesday,True
+2025-06-09 05:00:00,Refrigerator,6,Living Room,4.3,25.8,5,Monday,True
+2025-04-28 20:00:00,AC,2,Kitchen,6.61,39.66,37,Monday,False
+2025-06-28 10:00:00,Microwave,5,Bathroom,3.94,23.64,29,Saturday,True
+2025-06-17 23:00:00,Washing Machine,1,Bathroom,1.61,9.66,36,Tuesday,False
+2025-05-29 00:00:00,Refrigerator,2,Kitchen,1.78,10.68,7,Thursday,False
+2025-05-23 15:00:00,Washing Machine,3,Kitchen,3.61,21.66,37,Friday,False
+2025-07-18 08:00:00,Light,2,Dining Room,0.29,1.74,26,Friday,False
+2025-07-12 22:00:00,AC,3,Dining Room,9.95,59.7,32,Saturday,True
+2025-05-15 01:00:00,TV,5,Kitchen,4.92,29.52,25,Thursday,True
+2025-05-29 03:00:00,Light,6,Kitchen,0.59,3.54,34,Thursday,False
+2025-06-06 18:00:00,Dishwasher,2,Living Room,2.18,13.08,39,Friday,False
+2025-05-20 22:00:00,Microwave,1,Laundry Room,0.47,2.82,22,Tuesday,False
+2025-05-21 10:00:00,Heater,3,Living Room,7.11,42.66,18,Wednesday,True
+2025-05-12 09:00:00,TV,4,Bedroom,5.4,32.4,22,Monday,True
+2025-05-20 09:00:00,Light,3,Dining Room,0.23,1.38,22,Tuesday,False
+2025-07-25 15:00:00,Microwave,1,Kitchen,0.66,3.96,33,Friday,False
+2025-04-27 09:00:00,Heater,1,Bedroom,2.27,13.62,18,Sunday,False
+2025-04-19 17:00:00,Refrigerator,4,Dining Room,3.62,21.72,4,Saturday,True
+2025-07-13 04:00:00,TV,2,Dining Room,1.19,7.14,20,Sunday,False
+2025-06-18 05:00:00,TV,1,Bathroom,0.7,4.2,31,Wednesday,False
+2025-07-17 04:00:00,Heater,4,Kitchen,6.32,37.92,11,Thursday,True
+2025-06-02 07:00:00,Oven,2,Bedroom,5.65,33.9,187,Monday,False
+2025-05-22 21:00:00,TV,2,Bedroom,1.02,6.12,34,Thursday,False
+2025-06-21 09:00:00,Washing Machine,5,Bathroom,9.98,59.88,21,Saturday,True
+2025-05-22 11:00:00,Refrigerator,6,Bedroom,4.74,28.44,7,Thursday,True
+2025-07-19 17:00:00,Washing Machine,5,Kitchen,8.41,50.46,34,Saturday,True
+2025-06-04 15:00:00,Microwave,5,Dining Room,3.11,18.66,25,Wednesday,True
+2025-07-22 05:00:00,TV,1,Dining Room,1.1,6.6,32,Tuesday,False
+2025-06-27 14:00:00,AC,1,Bedroom,3.07,18.42,32,Friday,False
+2025-07-06 17:00:00,AC,5,Bathroom,15.71,94.26,42,Sunday,True
+2025-07-19 20:00:00,Refrigerator,3,Laundry Room,2.31,13.86,7,Saturday,True
+2025-06-24 06:00:00,TV,3,Kitchen,3.49,20.94,30,Tuesday,True
+2025-05-06 10:00:00,Oven,1,Kitchen,2.11,12.66,122,Tuesday,False
+2025-04-19 08:00:00,TV,4,Laundry Room,3.91,23.46,27,Saturday,True
+2025-06-20 01:00:00,Washing Machine,1,Kitchen,1.35,8.1,21,Friday,False
+2025-05-26 20:00:00,Fan,3,Living Room,0.96,5.76,21,Monday,False
+2025-06-08 04:00:00,Washing Machine,5,Living Room,6.68,40.08,31,Sunday,True
+2025-04-21 11:00:00,Washing Machine,3,Laundry Room,5.09,30.54,28,Monday,True
+2025-05-28 13:00:00,Microwave,5,Living Room,4.6,27.6,28,Wednesday,True
+2025-06-07 16:00:00,Oven,5,Bedroom,13.13,78.78,170,Saturday,True
+2025-06-15 13:00:00,Microwave,2,Laundry Room,1.81,10.86,28,Sunday,False
+2025-05-19 23:00:00,Light,4,Dining Room,0.58,3.48,21,Monday,False
+2025-05-02 09:00:00,Dishwasher,3,Dining Room,3.37,20.22,23,Friday,True
+2025-07-08 10:00:00,Heater,3,Laundry Room,5.45,32.7,13,Tuesday,False
+2025-06-09 05:00:00,AC,6,Dining Room,18.64,111.84,38,Monday,True
+2025-04-20 19:00:00,Light,6,Dining Room,1.01,6.06,20,Sunday,True
+2025-04-20 04:00:00,TV,5,Dining Room,3.8,22.8,34,Sunday,True
+2025-07-12 12:00:00,Refrigerator,1,Living Room,0.75,4.5,7,Saturday,False
+2025-04-24 13:00:00,Dishwasher,2,Laundry Room,2.47,14.82,25,Thursday,False
+2025-07-08 10:00:00,Refrigerator,1,Living Room,0.61,3.66,7,Tuesday,False
+2025-06-02 14:00:00,Fan,4,Laundry Room,0.8,4.8,22,Monday,False
+2025-05-15 07:00:00,TV,6,Kitchen,4.53,27.18,25,Thursday,True
+2025-06-11 06:00:00,Fan,3,Kitchen,1.25,7.5,22,Wednesday,True
+2025-07-03 22:00:00,Refrigerator,4,Kitchen,3.02,18.12,4,Thursday,True
+2025-05-24 02:00:00,TV,6,Bathroom,4.08,24.48,30,Saturday,True
+2025-07-12 23:00:00,Oven,2,Living Room,5.84,35.04,136,Saturday,False
+2025-06-06 23:00:00,Washing Machine,2,Bedroom,3.1,18.6,23,Friday,False
+2025-05-18 15:00:00,Microwave,1,Living Room,0.46,2.76,29,Sunday,False
+2025-07-13 11:00:00,Microwave,3,Laundry Room,2.42,14.52,23,Sunday,True
+2025-06-22 00:00:00,Washing Machine,3,Dining Room,4.18,25.08,34,Sunday,True
+2025-07-02 14:00:00,Oven,4,Living Room,7.74,46.44,192,Wednesday,True
+2025-06-27 16:00:00,Washing Machine,2,Bedroom,2.19,13.14,20,Friday,False
+2025-05-06 19:00:00,AC,2,Living Room,5.76,34.56,42,Tuesday,False
+2025-07-03 09:00:00,Heater,2,Kitchen,3.55,21.3,17,Thursday,False
+2025-05-02 19:00:00,Fan,1,Dining Room,0.26,1.56,22,Friday,False
+2025-05-07 10:00:00,Heater,5,Kitchen,9.94,59.64,16,Wednesday,True
+2025-07-22 11:00:00,Light,5,Dining Room,0.95,5.7,33,Tuesday,True
+2025-06-29 05:00:00,Microwave,6,Laundry Room,3.59,21.54,30,Sunday,True
+2025-05-19 11:00:00,Oven,2,Laundry Room,4.52,27.12,137,Monday,False
+2025-07-09 09:00:00,AC,2,Laundry Room,6.81,40.86,38,Wednesday,False
+2025-05-14 05:00:00,Fan,6,Dining Room,1.75,10.5,27,Wednesday,True
+2025-07-15 22:00:00,AC,3,Bathroom,9.62,57.72,35,Tuesday,True
+2025-07-24 19:00:00,Light,2,Living Room,0.34,2.04,35,Thursday,False
+2025-05-16 04:00:00,Light,3,Dining Room,0.46,2.76,26,Friday,False
+2025-07-18 17:00:00,Fan,4,Living Room,1.16,6.96,24,Friday,True
+2025-06-30 22:00:00,Refrigerator,2,Kitchen,1.98,11.88,4,Monday,True
+2025-06-07 08:00:00,TV,1,Dining Room,0.74,4.44,22,Saturday,False
+2025-06-03 16:00:00,TV,3,Bedroom,4.07,24.42,30,Tuesday,True
+2025-06-19 23:00:00,TV,5,Laundry Room,2.77,16.62,32,Thursday,True
+2025-06-03 14:00:00,Dishwasher,6,Kitchen,8.94,53.64,40,Tuesday,True
+2025-04-25 20:00:00,Fan,2,Laundry Room,0.58,3.48,32,Friday,False
+2025-05-21 04:00:00,Oven,5,Living Room,9.27,55.62,206,Wednesday,True
+2025-07-01 06:00:00,Fan,6,Living Room,2.81,16.86,32,Tuesday,True
+2025-04-30 01:00:00,Washing Machine,1,Bathroom,1.84,11.04,35,Wednesday,False
+2025-07-04 20:00:00,Light,2,Dining Room,0.15,0.9,20,Friday,False
+2025-06-08 20:00:00,Oven,3,Bathroom,4.57,27.42,185,Sunday,False
+2025-04-23 00:00:00,Washing Machine,3,Dining Room,4.82,28.92,23,Wednesday,True
+2025-06-13 06:00:00,Light,6,Bedroom,0.61,3.66,21,Friday,True
+2025-04-30 10:00:00,Fan,3,Dining Room,0.68,4.08,31,Wednesday,False
+2025-06-10 04:00:00,AC,5,Bathroom,15.64,93.84,33,Tuesday,True
+2025-05-07 01:00:00,Heater,5,Living Room,9.05,54.3,15,Wednesday,True
+2025-07-22 23:00:00,Fan,3,Bedroom,0.53,3.18,34,Tuesday,False
+2025-06-15 23:00:00,Oven,5,Kitchen,9.62,57.72,145,Sunday,True
+2025-07-26 14:00:00,AC,5,Living Room,12.93,77.58,36,Saturday,True
+2025-04-25 17:00:00,Dishwasher,5,Bedroom,5.41,32.46,29,Friday,True
+2025-05-21 07:00:00,AC,6,Dining Room,17.16,102.96,39,Wednesday,True
+2025-05-14 08:00:00,TV,2,Laundry Room,2.66,15.96,35,Wednesday,True
+2025-06-25 20:00:00,TV,6,Living Room,3.14,18.84,23,Wednesday,True
+2025-07-20 01:00:00,Light,6,Dining Room,1.12,6.72,31,Sunday,True
+2025-05-12 22:00:00,AC,4,Kitchen,12.28,73.68,31,Monday,True
+2025-06-28 01:00:00,AC,2,Dining Room,5.31,31.86,39,Saturday,False
+2025-04-26 02:00:00,Oven,3,Kitchen,6.59,39.54,239,Saturday,True
+2025-06-13 13:00:00,Refrigerator,5,Dining Room,3.25,19.5,6,Friday,True
+2025-06-05 03:00:00,Refrigerator,6,Bathroom,5.79,34.74,8,Thursday,True
+2025-05-24 19:00:00,Heater,3,Kitchen,5.01,30.06,20,Saturday,False
+2025-06-11 10:00:00,AC,4,Kitchen,11.26,67.56,42,Wednesday,True
+2025-07-22 22:00:00,AC,4,Living Room,10.36,62.16,40,Tuesday,True
+2025-06-05 08:00:00,Fan,6,Kitchen,2.77,16.62,26,Thursday,True
+2025-04-19 13:00:00,Microwave,4,Laundry Room,3.01,18.06,26,Saturday,True
+2025-07-02 15:00:00,Microwave,5,Living Room,2.91,17.46,27,Wednesday,True
+2025-05-10 00:00:00,Fan,3,Kitchen,1.08,6.48,20,Saturday,True
+2025-05-08 20:00:00,Washing Machine,3,Kitchen,3.89,23.34,39,Thursday,False
+2025-05-17 04:00:00,Dishwasher,3,Bathroom,4.13,24.78,29,Saturday,True
+2025-05-15 14:00:00,Oven,5,Laundry Room,13.99,83.94,116,Thursday,True
+2025-05-02 07:00:00,Oven,2,Bathroom,4.26,25.56,190,Friday,False
+2025-06-29 04:00:00,Fan,2,Laundry Room,0.61,3.66,24,Sunday,False
+2025-07-06 22:00:00,Washing Machine,1,Kitchen,1.37,8.22,23,Sunday,False
+2025-06-16 06:00:00,Washing Machine,6,Bathroom,9.0,54.0,34,Monday,True
+2025-04-24 08:00:00,Fan,2,Bathroom,0.29,1.74,22,Thursday,False
+2025-05-09 14:00:00,TV,4,Bathroom,5.49,32.94,29,Friday,True
+2025-07-02 18:00:00,AC,3,Bedroom,9.56,57.36,38,Wednesday,True
+2025-07-02 10:00:00,TV,5,Bathroom,3.56,21.36,29,Wednesday,True
+2025-07-11 18:00:00,Dishwasher,3,Kitchen,3.9,23.4,43,Friday,True
+2025-06-04 01:00:00,Light,1,Dining Room,0.16,0.96,35,Wednesday,False
+2025-05-17 16:00:00,Heater,5,Bathroom,11.68,70.08,12,Saturday,True
+2025-05-26 00:00:00,Washing Machine,5,Dining Room,8.12,48.72,39,Monday,True
+2025-05-05 18:00:00,AC,1,Living Room,2.53,15.18,40,Monday,False
+2025-06-26 11:00:00,Washing Machine,2,Dining Room,3.93,23.58,39,Thursday,False
+2025-05-06 13:00:00,Light,1,Laundry Room,0.05,0.3,21,Tuesday,False
+2025-05-20 09:00:00,Dishwasher,2,Dining Room,2.36,14.16,21,Tuesday,False
+2025-06-26 06:00:00,Microwave,3,Kitchen,2.53,15.18,26,Thursday,True
+2025-06-03 03:00:00,AC,6,Kitchen,20.97,125.82,30,Tuesday,True
+2025-07-11 09:00:00,TV,6,Bathroom,6.09,36.54,35,Friday,True
+2025-07-18 14:00:00,Microwave,3,Bedroom,1.63,9.78,29,Friday,False
+2025-06-09 08:00:00,AC,6,Bathroom,16.21,97.26,41,Monday,True
+2025-06-24 07:00:00,Heater,5,Bathroom,9.98,59.88,11,Tuesday,True
+2025-07-20 03:00:00,Heater,5,Laundry Room,10.05,60.3,10,Sunday,True
+2025-06-16 05:00:00,Oven,1,Dining Room,2.35,14.1,227,Monday,False
+2025-04-25 12:00:00,Oven,2,Bathroom,4.2,25.2,140,Friday,False
+2025-05-14 20:00:00,Heater,3,Kitchen,6.18,37.08,19,Wednesday,True
+2025-06-01 19:00:00,TV,1,Laundry Room,0.62,3.72,23,Sunday,False
+2025-04-28 07:00:00,Fan,6,Laundry Room,1.0,6.0,32,Monday,False
+2025-05-20 02:00:00,Oven,1,Living Room,2.34,14.04,148,Tuesday,False
+2025-04-21 02:00:00,AC,4,Bathroom,12.3,73.8,36,Monday,True
+2025-06-13 09:00:00,Fan,6,Laundry Room,0.69,4.14,23,Friday,False
+2025-07-15 12:00:00,Dishwasher,6,Bedroom,8.33,49.98,38,Tuesday,True
+2025-05-19 08:00:00,Oven,2,Bathroom,4.56,27.36,121,Monday,False
+2025-07-10 06:00:00,Heater,3,Bathroom,6.36,38.16,12,Thursday,True
+2025-06-16 15:00:00,AC,3,Dining Room,8.2,49.2,32,Monday,True
+2025-05-06 16:00:00,Dishwasher,4,Bedroom,4.55,27.3,24,Tuesday,True
+2025-07-05 13:00:00,Heater,2,Dining Room,3.24,19.44,13,Saturday,False
+2025-04-20 17:00:00,TV,3,Living Room,2.08,12.48,23,Sunday,False
+2025-07-04 00:00:00,TV,2,Living Room,2.84,17.04,21,Friday,True
+2025-07-24 18:00:00,Refrigerator,4,Dining Room,3.47,20.82,4,Thursday,True
+2025-07-26 22:00:00,TV,5,Bedroom,4.7,28.2,31,Saturday,True
+2025-06-28 15:00:00,Microwave,3,Dining Room,1.61,9.66,32,Saturday,False
+2025-05-11 05:00:00,Washing Machine,4,Dining Room,4.86,29.16,31,Sunday,True
+2025-06-17 12:00:00,Washing Machine,5,Laundry Room,9.12,54.72,27,Tuesday,True
+2025-05-30 12:00:00,Dishwasher,6,Bathroom,7.87,47.22,45,Friday,True
+2025-06-10 06:00:00,AC,4,Bedroom,10.62,63.72,30,Tuesday,True
+2025-05-04 14:00:00,Microwave,5,Bedroom,4.59,27.54,26,Sunday,True
+2025-06-14 18:00:00,Heater,2,Living Room,4.84,29.04,13,Saturday,False
+2025-05-17 14:00:00,Fan,6,Bathroom,2.17,13.02,31,Saturday,True
+2025-05-18 19:00:00,Microwave,3,Living Room,1.7,10.2,27,Sunday,False
+2025-07-26 06:00:00,Heater,6,Dining Room,9.2,55.2,16,Saturday,True
+2025-04-29 09:00:00,Light,2,Kitchen,0.34,2.04,32,Tuesday,False
+2025-04-29 14:00:00,Refrigerator,5,Bathroom,3.07,18.42,4,Tuesday,True
+2025-05-29 00:00:00,Refrigerator,6,Bedroom,3.64,21.84,6,Thursday,True
+2025-06-07 20:00:00,TV,3,Dining Room,3.78,22.68,27,Saturday,True
+2025-05-30 23:00:00,Light,5,Bathroom,0.55,3.3,26,Friday,False
+2025-06-20 21:00:00,Refrigerator,1,Laundry Room,0.74,4.44,6,Friday,False
+2025-06-11 05:00:00,Fan,4,Living Room,0.77,4.62,29,Wednesday,False
+2025-04-22 17:00:00,TV,4,Living Room,2.58,15.48,24,Tuesday,True
+2025-05-11 09:00:00,Washing Machine,6,Living Room,6.36,38.16,31,Sunday,True
+2025-06-25 22:00:00,Refrigerator,4,Dining Room,2.53,15.18,6,Wednesday,True
+2025-06-26 17:00:00,Microwave,1,Bedroom,0.77,4.62,22,Thursday,False
+2025-05-16 11:00:00,Fan,6,Bathroom,2.86,17.16,30,Friday,True
+2025-07-02 13:00:00,Oven,6,Dining Room,12.01,72.06,155,Wednesday,True
+2025-05-30 10:00:00,TV,5,Living Room,5.44,32.64,22,Friday,True
+2025-06-24 19:00:00,AC,3,Bedroom,9.81,58.86,40,Tuesday,True
+2025-05-11 04:00:00,Microwave,2,Bedroom,1.71,10.26,33,Sunday,False
+2025-06-20 18:00:00,Light,6,Bedroom,0.63,3.78,34,Friday,True
+2025-05-25 21:00:00,Dishwasher,6,Living Room,7.79,46.74,31,Sunday,True
+2025-06-18 21:00:00,TV,3,Bedroom,4.29,25.74,27,Wednesday,True
+2025-07-19 22:00:00,Heater,4,Bedroom,8.88,53.28,13,Saturday,True
+2025-06-28 17:00:00,Oven,1,Dining Room,2.94,17.64,207,Saturday,False
+2025-07-20 11:00:00,Fan,6,Living Room,2.17,13.02,33,Sunday,True
+2025-07-23 15:00:00,AC,1,Laundry Room,2.86,17.16,30,Wednesday,False
+2025-04-19 02:00:00,Fan,6,Kitchen,2.33,13.98,34,Saturday,True
+2025-06-26 22:00:00,Light,4,Kitchen,0.64,3.84,24,Thursday,True
+2025-06-14 21:00:00,Oven,2,Dining Room,3.83,22.98,157,Saturday,False
+2025-06-19 00:00:00,Washing Machine,3,Kitchen,5.88,35.28,31,Thursday,True
+2025-06-14 11:00:00,Refrigerator,2,Bedroom,1.65,9.9,8,Saturday,False
+2025-05-16 14:00:00,Heater,2,Laundry Room,3.61,21.66,12,Friday,False
+2025-06-20 22:00:00,Fan,5,Bathroom,2.41,14.46,21,Friday,True
+2025-04-30 12:00:00,Dishwasher,4,Laundry Room,5.92,35.52,23,Wednesday,True
+2025-07-22 19:00:00,Microwave,3,Kitchen,2.4,14.4,24,Tuesday,True
+2025-06-03 09:00:00,Light,4,Bathroom,0.24,1.44,25,Tuesday,False
+2025-06-16 21:00:00,Microwave,2,Bathroom,1.52,9.12,31,Monday,False
+2025-04-26 22:00:00,Microwave,6,Living Room,3.19,19.14,20,Saturday,True
+2025-06-16 18:00:00,Refrigerator,5,Bedroom,3.64,21.84,6,Monday,True
+2025-04-18 18:00:00,Microwave,6,Dining Room,3.69,22.14,33,Friday,True
+2025-05-13 23:00:00,Oven,2,Laundry Room,5.96,35.76,195,Tuesday,False
+2025-07-25 23:00:00,Fan,2,Bedroom,0.2,1.2,21,Friday,False
+2025-05-05 10:00:00,Washing Machine,4,Bathroom,4.66,27.96,22,Monday,True
+2025-05-24 04:00:00,Microwave,5,Dining Room,2.14,12.84,23,Saturday,True
+2025-07-24 12:00:00,Washing Machine,4,Kitchen,6.95,41.7,36,Thursday,True
+2025-05-15 23:00:00,AC,6,Laundry Room,18.24,109.44,33,Thursday,True
+2025-04-27 07:00:00,Refrigerator,4,Dining Room,2.81,16.86,4,Sunday,True
+2025-07-21 15:00:00,AC,5,Dining Room,16.58,99.48,34,Monday,True
+2025-07-26 19:00:00,TV,5,Bathroom,2.68,16.08,26,Saturday,True
+2025-05-02 23:00:00,Washing Machine,5,Bathroom,6.99,41.94,21,Friday,True
+2025-05-25 04:00:00,Oven,3,Bedroom,7.32,43.92,243,Sunday,True
+2025-04-20 05:00:00,Refrigerator,1,Bedroom,0.88,5.28,7,Sunday,False
+2025-06-14 20:00:00,Oven,6,Bathroom,13.73,82.38,206,Saturday,True
+2025-07-27 15:00:00,Light,4,Kitchen,0.79,4.74,27,Sunday,True
+2025-07-21 15:00:00,AC,6,Dining Room,18.99,113.94,32,Monday,True
+2025-05-23 18:00:00,Washing Machine,4,Dining Room,4.57,27.42,26,Friday,True
+2025-06-14 08:00:00,Dishwasher,3,Laundry Room,4.38,26.28,30,Saturday,True
+2025-04-19 03:00:00,AC,2,Kitchen,6.5,39.0,39,Saturday,False
+2025-06-04 06:00:00,Microwave,3,Dining Room,2.04,12.24,32,Wednesday,True
+2025-07-05 20:00:00,Heater,6,Kitchen,11.08,66.48,19,Saturday,True
+2025-06-20 18:00:00,TV,2,Bedroom,2.52,15.12,22,Friday,True
+2025-04-21 01:00:00,Fan,3,Bathroom,1.2,7.2,24,Monday,True
+2025-07-07 15:00:00,AC,2,Dining Room,5.41,32.46,42,Monday,False
+2025-05-20 04:00:00,Light,1,Bedroom,0.1,0.6,20,Tuesday,False
+2025-04-21 21:00:00,Heater,3,Living Room,6.61,39.66,20,Monday,True
+2025-05-16 21:00:00,Heater,6,Living Room,13.41,80.46,11,Friday,True
+2025-07-23 20:00:00,Washing Machine,4,Laundry Room,6.47,38.82,31,Wednesday,True
+2025-07-15 00:00:00,Refrigerator,6,Bedroom,4.77,28.62,4,Tuesday,True
+2025-06-02 02:00:00,Washing Machine,4,Living Room,6.85,41.1,22,Monday,True
+2025-07-24 14:00:00,Dishwasher,6,Laundry Room,6.85,41.1,20,Thursday,True
+2025-07-12 19:00:00,TV,5,Dining Room,6.2,37.2,20,Saturday,True
+2025-05-10 02:00:00,Refrigerator,2,Bedroom,1.46,8.76,7,Saturday,False
+2025-07-26 15:00:00,Microwave,4,Living Room,2.38,14.28,23,Saturday,True
+2025-07-27 14:00:00,Heater,5,Bedroom,8.19,49.14,13,Sunday,True
+2025-07-23 18:00:00,Oven,6,Living Room,12.07,72.42,119,Wednesday,True
+2025-05-27 05:00:00,AC,2,Kitchen,6.42,38.52,34,Tuesday,False
+2025-07-15 07:00:00,Oven,4,Kitchen,10.78,64.68,157,Tuesday,True
+2025-05-31 21:00:00,TV,3,Dining Room,3.89,23.34,35,Saturday,True
+2025-07-20 16:00:00,Microwave,1,Dining Room,0.92,5.52,32,Sunday,False
+2025-06-08 23:00:00,AC,2,Bathroom,5.47,32.82,37,Sunday,False
+2025-05-28 16:00:00,TV,5,Living Room,5.11,30.66,32,Wednesday,True
+2025-04-29 10:00:00,Heater,4,Bedroom,6.15,36.9,12,Tuesday,True
+2025-04-19 19:00:00,Microwave,3,Kitchen,2.38,14.28,30,Saturday,True
+2025-05-18 08:00:00,Refrigerator,2,Laundry Room,1.81,10.86,4,Sunday,True
+2025-05-29 23:00:00,Microwave,1,Dining Room,0.84,5.04,22,Thursday,False
+2025-06-11 11:00:00,Washing Machine,4,Dining Room,5.98,35.88,28,Wednesday,True
+2025-07-09 06:00:00,Dishwasher,4,Living Room,5.99,35.94,41,Wednesday,True
+2025-05-03 23:00:00,Refrigerator,1,Bedroom,0.81,4.86,6,Saturday,False
+2025-05-01 19:00:00,Heater,5,Kitchen,8.93,53.58,15,Thursday,True
+2025-07-07 18:00:00,Dishwasher,2,Laundry Room,2.53,15.18,40,Monday,False
+2025-07-15 05:00:00,Light,3,Bedroom,0.27,1.62,20,Tuesday,False
+2025-05-06 07:00:00,Microwave,3,Living Room,2.84,17.04,34,Tuesday,True
+2025-07-05 11:00:00,AC,2,Laundry Room,5.24,31.44,39,Saturday,False
+2025-04-28 05:00:00,Washing Machine,4,Living Room,6.84,41.04,24,Monday,True
+2025-06-29 00:00:00,Dishwasher,3,Bedroom,4.22,25.32,25,Sunday,True
+2025-05-31 08:00:00,Fan,1,Kitchen,0.22,1.32,28,Saturday,False
+2025-05-24 20:00:00,Refrigerator,2,Bathroom,1.51,9.06,7,Saturday,False
+2025-07-06 03:00:00,Light,3,Kitchen,0.21,1.26,20,Sunday,False
+2025-07-19 10:00:00,Light,4,Kitchen,0.41,2.46,28,Saturday,False
+2025-04-24 11:00:00,Oven,3,Living Room,7.74,46.44,226,Thursday,True
+2025-05-05 21:00:00,Refrigerator,6,Bedroom,4.21,25.26,7,Monday,True
+2025-07-17 21:00:00,Fan,3,Bathroom,1.2,7.2,29,Thursday,True
+2025-07-12 09:00:00,Fan,4,Laundry Room,0.88,5.28,25,Saturday,False
+2025-07-03 18:00:00,Microwave,1,Bedroom,0.62,3.72,32,Thursday,False
+2025-06-22 02:00:00,Heater,6,Bathroom,9.91,59.46,19,Sunday,True
+2025-07-04 05:00:00,Microwave,3,Bedroom,1.57,9.42,30,Friday,False
+2025-05-01 07:00:00,TV,1,Laundry Room,1.47,8.82,24,Thursday,False
+2025-05-20 03:00:00,Oven,1,Bedroom,1.91,11.46,134,Tuesday,False
+2025-05-20 02:00:00,Fan,3,Living Room,0.98,5.88,22,Tuesday,False
+2025-04-25 10:00:00,Refrigerator,5,Bedroom,3.73,22.38,7,Friday,True
+2025-05-05 15:00:00,Fan,5,Kitchen,2.07,12.42,28,Monday,True
+2025-04-23 16:00:00,TV,2,Laundry Room,1.5,9.0,34,Wednesday,False
+2025-07-19 05:00:00,Microwave,5,Kitchen,3.98,23.88,35,Saturday,True
+2025-06-06 00:00:00,Light,1,Bathroom,0.16,0.96,28,Friday,False
+2025-04-27 11:00:00,Oven,2,Living Room,4.47,26.82,164,Sunday,False
+2025-05-19 10:00:00,Washing Machine,1,Laundry Room,1.65,9.9,40,Monday,False
+2025-05-02 00:00:00,Fan,2,Bedroom,0.57,3.42,30,Friday,False
+2025-05-25 07:00:00,Washing Machine,1,Bedroom,1.48,8.88,40,Sunday,False
+2025-07-09 23:00:00,Fan,6,Bathroom,1.35,8.1,35,Wednesday,True
+2025-06-03 18:00:00,TV,2,Laundry Room,1.17,7.02,23,Tuesday,False
+2025-07-12 15:00:00,Microwave,3,Bedroom,1.26,7.56,35,Saturday,False
+2025-07-20 10:00:00,Heater,6,Laundry Room,9.56,57.36,11,Sunday,True
+2025-07-22 12:00:00,Dishwasher,3,Kitchen,3.68,22.08,21,Tuesday,True
+2025-06-16 18:00:00,TV,2,Kitchen,2.89,17.34,24,Monday,True
+2025-06-15 19:00:00,Washing Machine,4,Kitchen,4.12,24.72,20,Sunday,True
+2025-06-24 02:00:00,AC,1,Living Room,3.4,20.4,32,Tuesday,False
+2025-07-07 08:00:00,Microwave,3,Bedroom,2.38,14.28,24,Monday,True
+2025-06-11 12:00:00,Light,4,Bathroom,0.32,1.92,21,Wednesday,False
+2025-07-06 07:00:00,Fan,5,Kitchen,1.89,11.34,22,Sunday,True
+2025-06-02 02:00:00,Washing Machine,5,Bathroom,5.59,33.54,30,Monday,True
+2025-05-06 01:00:00,Washing Machine,2,Kitchen,2.41,14.46,32,Tuesday,False
+2025-07-19 03:00:00,Dishwasher,3,Dining Room,4.25,25.5,21,Saturday,True
+2025-05-05 02:00:00,Refrigerator,2,Bathroom,1.55,9.3,4,Monday,False
+2025-05-18 13:00:00,Fan,5,Bedroom,1.32,7.92,22,Sunday,True
+2025-05-31 18:00:00,Light,1,Bathroom,0.06,0.36,32,Saturday,False
+2025-04-26 14:00:00,TV,4,Kitchen,4.87,29.22,33,Saturday,True
+2025-06-24 18:00:00,Oven,6,Bedroom,17.15,102.9,188,Tuesday,True
+2025-05-18 15:00:00,Microwave,4,Dining Room,3.62,21.72,24,Sunday,True
+2025-07-15 10:00:00,Washing Machine,1,Kitchen,1.12,6.72,27,Tuesday,False
+2025-06-29 19:00:00,Oven,1,Dining Room,2.97,17.82,189,Sunday,False
+2025-06-26 16:00:00,Light,2,Dining Room,0.15,0.9,33,Thursday,False
+2025-06-08 12:00:00,TV,4,Bedroom,2.16,12.96,24,Sunday,False
+2025-07-03 01:00:00,Washing Machine,3,Living Room,5.06,30.36,29,Thursday,True
+2025-07-07 10:00:00,Light,3,Dining Room,0.16,0.96,23,Monday,False
+2025-06-24 09:00:00,Refrigerator,2,Kitchen,1.48,8.88,8,Tuesday,False
+2025-07-27 11:00:00,Washing Machine,2,Bedroom,2.39,14.34,29,Sunday,False
+2025-05-27 12:00:00,Fan,5,Dining Room,0.55,3.3,24,Tuesday,False
+2025-05-07 09:00:00,TV,1,Living Room,0.96,5.76,29,Wednesday,False
+2025-05-06 18:00:00,AC,5,Living Room,13.56,81.36,42,Tuesday,True
+2025-06-20 21:00:00,AC,4,Bathroom,11.5,69.0,42,Friday,True
+2025-07-08 17:00:00,Light,2,Living Room,0.23,1.38,34,Tuesday,False
+2025-05-18 05:00:00,AC,4,Bedroom,11.78,70.68,39,Sunday,True
+2025-06-03 16:00:00,Dishwasher,2,Living Room,2.18,13.08,29,Tuesday,False
+2025-04-27 03:00:00,Light,1,Bathroom,0.2,1.2,31,Sunday,False
+2025-05-23 11:00:00,Washing Machine,3,Bathroom,3.65,21.9,27,Friday,False
+2025-04-21 06:00:00,Dishwasher,1,Living Room,1.49,8.94,33,Monday,False
+2025-06-10 11:00:00,Dishwasher,2,Bedroom,2.2,13.2,34,Tuesday,False
+2025-06-09 06:00:00,Fan,5,Living Room,0.92,5.52,28,Monday,False
+2025-06-03 18:00:00,Washing Machine,5,Kitchen,8.2,49.2,29,Tuesday,True
+2025-05-26 16:00:00,Heater,5,Laundry Room,11.84,71.04,14,Monday,True
+2025-07-21 15:00:00,Washing Machine,4,Bedroom,5.23,31.38,27,Monday,True
+2025-07-23 19:00:00,Refrigerator,4,Bedroom,2.69,16.14,6,Wednesday,True
+2025-05-22 07:00:00,Light,5,Dining Room,0.97,5.82,21,Thursday,True
+2025-07-05 02:00:00,AC,3,Laundry Room,8.13,48.78,40,Saturday,True
+2025-06-26 21:00:00,Light,6,Living Room,1.04,6.24,35,Thursday,True
+2025-05-21 13:00:00,Refrigerator,5,Living Room,3.73,22.38,7,Wednesday,True
+2025-05-30 23:00:00,Dishwasher,1,Living Room,1.43,8.58,32,Friday,False
+2025-06-18 01:00:00,Heater,4,Kitchen,7.58,45.48,13,Wednesday,True
+2025-05-05 17:00:00,Dishwasher,1,Dining Room,1.23,7.38,44,Monday,False
+2025-07-15 18:00:00,Light,2,Kitchen,0.18,1.08,22,Tuesday,False
+2025-06-08 08:00:00,Light,6,Living Room,0.9,5.4,33,Sunday,True
+2025-04-28 10:00:00,Heater,5,Living Room,11.12,66.72,15,Monday,True
+2025-05-28 11:00:00,Oven,1,Laundry Room,2.29,13.74,187,Wednesday,False
+2025-07-03 14:00:00,Heater,6,Bedroom,14.66,87.96,10,Thursday,True
+2025-05-04 20:00:00,Washing Machine,6,Dining Room,11.4,68.4,31,Sunday,True
+2025-05-15 04:00:00,Light,4,Dining Room,0.28,1.68,30,Thursday,False
+2025-05-05 03:00:00,Refrigerator,1,Laundry Room,1.0,6.0,6,Monday,False
+2025-07-07 21:00:00,Fan,2,Kitchen,0.44,2.64,30,Monday,False
+2025-06-30 20:00:00,Oven,2,Bathroom,4.53,27.18,201,Monday,False
+2025-06-07 00:00:00,Washing Machine,3,Bedroom,4.77,28.62,38,Saturday,True
+2025-05-26 09:00:00,Oven,4,Bedroom,6.86,41.16,182,Monday,True
+2025-07-04 08:00:00,Oven,4,Kitchen,8.46,50.76,125,Friday,True
+2025-05-27 13:00:00,Washing Machine,2,Dining Room,3.08,18.48,32,Tuesday,False
+2025-06-23 15:00:00,Microwave,1,Bedroom,0.63,3.78,28,Monday,False
+2025-05-15 22:00:00,Refrigerator,5,Dining Room,4.33,25.98,6,Thursday,True
+2025-07-07 04:00:00,TV,1,Laundry Room,1.13,6.78,26,Monday,False
+2025-06-07 02:00:00,Fan,1,Laundry Room,0.38,2.28,34,Saturday,False
+2025-05-11 17:00:00,AC,2,Bedroom,6.54,39.24,39,Sunday,False
+2025-06-15 21:00:00,AC,3,Living Room,7.94,47.64,33,Sunday,False
+2025-05-25 06:00:00,TV,1,Laundry Room,0.81,4.86,20,Sunday,False
+2025-06-03 21:00:00,Heater,4,Kitchen,7.02,42.12,20,Tuesday,True
+2025-06-01 22:00:00,AC,5,Living Room,15.19,91.14,41,Sunday,True
+2025-06-26 17:00:00,Light,4,Bathroom,0.63,3.78,21,Thursday,True
+2025-07-25 01:00:00,Oven,2,Bedroom,3.05,18.3,198,Friday,False
+2025-07-24 10:00:00,Light,4,Living Room,0.43,2.58,35,Thursday,False
+2025-05-09 13:00:00,Dishwasher,2,Bedroom,2.14,12.84,38,Friday,False
+2025-07-10 01:00:00,Oven,2,Bedroom,4.92,29.52,110,Thursday,False
+2025-06-23 20:00:00,Heater,6,Living Room,9.32,55.92,15,Monday,True
+2025-06-30 18:00:00,Refrigerator,1,Bedroom,0.62,3.72,8,Monday,False
+2025-05-26 01:00:00,Fan,3,Bedroom,1.45,8.7,35,Monday,True
+2025-06-06 10:00:00,Light,5,Living Room,0.39,2.34,21,Friday,False
+2025-05-08 16:00:00,Fan,3,Laundry Room,0.63,3.78,20,Thursday,False
+2025-06-06 02:00:00,AC,4,Dining Room,11.97,71.82,39,Friday,True
+2025-05-13 18:00:00,Refrigerator,3,Bathroom,1.97,11.82,5,Tuesday,True
+2025-04-27 15:00:00,Washing Machine,2,Bedroom,3.18,19.08,32,Sunday,False
+2025-06-23 06:00:00,Microwave,3,Dining Room,2.25,13.5,27,Monday,True
+2025-05-15 03:00:00,Fan,3,Living Room,0.48,2.88,32,Thursday,False
+2025-05-05 01:00:00,Fan,2,Bedroom,0.82,4.92,25,Monday,False
+2025-07-08 07:00:00,Fan,6,Kitchen,2.49,14.94,28,Tuesday,True
+2025-06-23 21:00:00,Washing Machine,2,Kitchen,3.35,20.1,36,Monday,False
+2025-05-11 07:00:00,AC,5,Kitchen,16.91,101.46,30,Sunday,True
+2025-05-25 13:00:00,Refrigerator,4,Kitchen,3.33,19.98,5,Sunday,True
+2025-04-27 08:00:00,Heater,6,Kitchen,12.63,75.78,18,Sunday,True
+2025-06-17 11:00:00,Fan,6,Living Room,1.27,7.62,35,Tuesday,True
+2025-05-05 18:00:00,Washing Machine,5,Bedroom,7.58,45.48,40,Monday,True
+2025-06-02 08:00:00,AC,4,Kitchen,10.78,64.68,30,Monday,True
+2025-05-09 00:00:00,Oven,4,Kitchen,10.06,60.36,211,Friday,True
+2025-05-06 18:00:00,Light,4,Living Room,0.31,1.86,30,Tuesday,False
+2025-07-04 07:00:00,Dishwasher,5,Dining Room,6.95,41.7,21,Friday,True
+2025-04-30 02:00:00,Dishwasher,2,Living Room,2.77,16.62,34,Wednesday,False
+2025-06-24 05:00:00,AC,4,Bathroom,13.49,80.94,33,Tuesday,True
+2025-06-05 09:00:00,Refrigerator,1,Kitchen,0.73,4.38,6,Thursday,False
+2025-07-07 02:00:00,Light,1,Dining Room,0.09,0.54,24,Monday,False
+2025-07-14 12:00:00,Refrigerator,2,Bedroom,1.62,9.72,5,Monday,False
+2025-04-18 00:00:00,Light,2,Dining Room,0.29,1.74,25,Friday,False
+2025-05-30 21:00:00,TV,6,Kitchen,5.78,34.68,28,Friday,True
+2025-06-11 01:00:00,Refrigerator,1,Laundry Room,0.65,3.9,5,Wednesday,False
+2025-05-29 01:00:00,Oven,5,Laundry Room,12.61,75.66,242,Thursday,True
+2025-06-21 04:00:00,Microwave,4,Bedroom,2.59,15.54,20,Saturday,True
+2025-04-30 15:00:00,TV,6,Bedroom,8.94,53.64,27,Wednesday,True
+2025-05-19 16:00:00,AC,6,Dining Room,17.2,103.2,37,Monday,True
+2025-07-14 14:00:00,Light,6,Bedroom,0.48,2.88,32,Monday,False
+2025-05-31 05:00:00,Fan,5,Laundry Room,1.54,9.24,29,Saturday,True
+2025-07-16 18:00:00,Refrigerator,5,Bedroom,4.8,28.8,4,Wednesday,True
+2025-04-28 21:00:00,Microwave,2,Kitchen,1.43,8.58,34,Monday,False
+2025-04-27 13:00:00,Microwave,4,Bedroom,1.52,9.12,26,Sunday,False
+2025-07-12 09:00:00,TV,4,Bathroom,2.94,17.64,33,Saturday,True
+2025-05-28 13:00:00,TV,6,Laundry Room,8.01,48.06,21,Wednesday,True
+2025-07-25 23:00:00,Heater,6,Kitchen,12.11,72.66,19,Friday,True
+2025-05-31 13:00:00,Washing Machine,5,Bedroom,7.31,43.86,36,Saturday,True
+2025-04-21 01:00:00,Microwave,3,Laundry Room,1.65,9.9,20,Monday,False
+2025-07-19 14:00:00,AC,2,Bedroom,6.99,41.94,31,Saturday,False
+2025-05-05 20:00:00,Refrigerator,2,Living Room,1.77,10.62,6,Monday,False
+2025-05-21 09:00:00,Light,6,Bedroom,0.77,4.62,32,Wednesday,True
+2025-06-25 18:00:00,AC,5,Dining Room,15.18,91.08,33,Wednesday,True
+2025-06-20 03:00:00,Fan,4,Kitchen,1.68,10.08,21,Friday,True
+2025-07-11 20:00:00,Heater,2,Kitchen,4.35,26.1,16,Friday,False
+2025-07-04 03:00:00,Fan,2,Laundry Room,0.77,4.62,24,Friday,False
+2025-06-10 03:00:00,Heater,4,Bathroom,8.88,53.28,20,Tuesday,True
+2025-07-05 04:00:00,Dishwasher,5,Laundry Room,6.52,39.12,40,Saturday,True
+2025-05-02 23:00:00,AC,5,Laundry Room,13.59,81.54,42,Friday,True
+2025-06-21 10:00:00,Light,2,Dining Room,0.32,1.92,25,Saturday,False
+2025-07-17 06:00:00,Heater,4,Dining Room,9.36,56.16,15,Thursday,True
+2025-04-30 07:00:00,Microwave,1,Bedroom,0.62,3.72,35,Wednesday,False
+2025-06-05 21:00:00,TV,1,Laundry Room,1.48,8.88,23,Thursday,False
+2025-05-02 07:00:00,TV,1,Living Room,1.19,7.14,35,Friday,False
+2025-07-13 08:00:00,Refrigerator,3,Living Room,2.08,12.48,5,Sunday,True
+2025-07-18 10:00:00,Washing Machine,5,Bathroom,6.15,36.9,37,Friday,True
+2025-04-28 22:00:00,AC,1,Bedroom,2.65,15.9,31,Monday,False
+2025-06-28 20:00:00,Refrigerator,1,Laundry Room,0.87,5.22,6,Saturday,False
+2025-05-02 09:00:00,Light,3,Bedroom,0.4,2.4,26,Friday,False
+2025-07-01 05:00:00,Microwave,6,Laundry Room,3.7,22.2,22,Tuesday,True
+2025-07-18 16:00:00,Dishwasher,6,Bedroom,8.18,49.08,39,Friday,True
+2025-05-02 09:00:00,Light,5,Bedroom,0.31,1.86,31,Friday,False
+2025-06-07 04:00:00,Fan,2,Bathroom,0.77,4.62,20,Saturday,False
+2025-05-02 21:00:00,Refrigerator,5,Dining Room,4.66,27.96,7,Friday,True
+2025-04-30 05:00:00,TV,5,Laundry Room,6.42,38.52,35,Wednesday,True
+2025-05-26 17:00:00,Fan,3,Dining Room,1.05,6.3,20,Monday,True
+2025-06-26 05:00:00,Refrigerator,4,Living Room,3.42,20.52,7,Thursday,True
+2025-05-24 17:00:00,Washing Machine,2,Kitchen,2.86,17.16,23,Saturday,False
+2025-05-04 10:00:00,Fan,6,Bathroom,0.7,4.2,21,Sunday,False
+2025-07-02 14:00:00,Fan,2,Kitchen,0.95,5.7,34,Wednesday,False
+2025-05-20 06:00:00,Oven,6,Laundry Room,10.72,64.32,159,Tuesday,True
+2025-07-26 00:00:00,Dishwasher,1,Bathroom,1.03,6.18,36,Saturday,False
+2025-04-26 23:00:00,Fan,5,Kitchen,2.07,12.42,21,Saturday,True
+2025-05-12 07:00:00,Refrigerator,6,Living Room,4.07,24.42,7,Monday,True
+2025-06-28 11:00:00,Light,5,Bedroom,0.71,4.26,26,Saturday,True
+2025-07-13 00:00:00,Washing Machine,4,Bathroom,7.71,46.26,30,Sunday,True
+2025-06-24 11:00:00,Microwave,4,Laundry Room,3.85,23.1,27,Tuesday,True
+2025-05-21 05:00:00,AC,3,Laundry Room,10.14,60.84,30,Wednesday,True
+2025-07-01 13:00:00,Washing Machine,5,Laundry Room,5.34,32.04,31,Tuesday,True
+2025-06-04 22:00:00,Refrigerator,2,Living Room,1.73,10.38,4,Wednesday,False
+2025-07-05 01:00:00,Washing Machine,6,Dining Room,7.51,45.06,35,Saturday,True
+2025-07-16 15:00:00,AC,5,Kitchen,16.32,97.92,31,Wednesday,True
+2025-05-30 20:00:00,Refrigerator,5,Kitchen,4.85,29.1,7,Friday,True
+2025-05-28 22:00:00,TV,5,Bedroom,7.03,42.18,22,Wednesday,True
+2025-06-14 12:00:00,AC,4,Laundry Room,12.79,76.74,37,Saturday,True
+2025-06-09 20:00:00,Washing Machine,6,Bedroom,9.1,54.6,26,Monday,True
+2025-07-13 17:00:00,Washing Machine,2,Bedroom,3.62,21.72,39,Sunday,False
+2025-07-16 05:00:00,Microwave,4,Living Room,1.92,11.52,29,Wednesday,False
+2025-07-10 18:00:00,Heater,3,Dining Room,6.54,39.24,10,Thursday,True
+2025-07-13 20:00:00,Washing Machine,2,Bedroom,2.86,17.16,33,Sunday,False
+2025-06-10 08:00:00,Dishwasher,5,Bathroom,5.29,31.74,27,Tuesday,True
+2025-05-21 10:00:00,Heater,5,Living Room,11.73,70.38,17,Wednesday,True
+2025-06-29 08:00:00,Microwave,1,Bathroom,0.3,1.8,30,Sunday,False
+2025-04-22 14:00:00,TV,3,Bathroom,1.74,10.44,23,Tuesday,False
+2025-06-24 00:00:00,TV,1,Dining Room,1.48,8.88,31,Tuesday,False
+2025-06-07 06:00:00,Fan,4,Living Room,1.84,11.04,27,Saturday,True
+2025-05-27 06:00:00,Refrigerator,6,Bathroom,5.45,32.7,5,Tuesday,True
+2025-06-09 15:00:00,Oven,1,Kitchen,2.81,16.86,109,Monday,False
+2025-07-03 20:00:00,Fan,6,Bathroom,1.42,8.52,31,Thursday,True
+2025-06-13 04:00:00,Dishwasher,1,Dining Room,1.32,7.92,21,Friday,False
+2025-07-07 09:00:00,Heater,1,Dining Room,2.47,14.82,12,Monday,False
+2025-05-31 10:00:00,Oven,5,Bedroom,7.71,46.26,107,Saturday,True
+2025-07-18 03:00:00,Washing Machine,3,Dining Room,4.09,24.54,28,Friday,True
+2025-06-08 23:00:00,Microwave,5,Bathroom,2.33,13.98,26,Sunday,True
+2025-07-21 07:00:00,Oven,2,Living Room,3.34,20.04,217,Monday,False
+2025-04-18 12:00:00,Oven,5,Dining Room,13.36,80.16,244,Friday,True
+2025-07-23 19:00:00,Fan,4,Bathroom,0.42,2.52,35,Wednesday,False
+2025-04-22 14:00:00,Refrigerator,5,Dining Room,3.23,19.38,8,Tuesday,True
+2025-07-12 00:00:00,Dishwasher,5,Bathroom,7.35,44.1,21,Saturday,True
+2025-07-20 19:00:00,Microwave,5,Kitchen,2.58,15.48,27,Sunday,True
+2025-05-07 22:00:00,Washing Machine,2,Kitchen,2.33,13.98,30,Wednesday,False
+2025-07-19 04:00:00,Oven,1,Bedroom,1.52,9.12,208,Saturday,False
+2025-07-23 17:00:00,Microwave,1,Bedroom,0.79,4.74,31,Wednesday,False
+2025-05-27 12:00:00,Heater,6,Bedroom,9.26,55.56,13,Tuesday,True
+2025-05-13 23:00:00,AC,3,Bathroom,8.93,53.58,35,Tuesday,True
+2025-06-15 09:00:00,Heater,1,Dining Room,2.13,12.78,18,Sunday,False
+2025-05-01 16:00:00,Light,5,Laundry Room,0.82,4.92,27,Thursday,True
+2025-06-17 14:00:00,Fan,2,Bathroom,0.23,1.38,34,Tuesday,False
+2025-07-24 01:00:00,AC,6,Bathroom,15.11,90.66,41,Thursday,True
+2025-05-25 17:00:00,Oven,3,Kitchen,7.58,45.48,132,Sunday,True
+2025-06-26 06:00:00,AC,6,Living Room,17.03,102.18,32,Thursday,True
+2025-05-01 22:00:00,Microwave,1,Kitchen,0.42,2.52,32,Thursday,False
+2025-06-25 19:00:00,Light,2,Dining Room,0.28,1.68,25,Wednesday,False
+2025-06-21 22:00:00,Washing Machine,2,Laundry Room,3.61,21.66,39,Saturday,False
+2025-05-29 15:00:00,Dishwasher,2,Living Room,2.6,15.6,22,Thursday,False
+2025-07-03 11:00:00,AC,4,Kitchen,11.31,67.86,41,Thursday,True
+2025-05-27 08:00:00,Refrigerator,5,Kitchen,3.74,22.44,5,Tuesday,True
+2025-06-17 03:00:00,AC,3,Dining Room,7.99,47.94,32,Tuesday,False
+2025-04-19 04:00:00,Dishwasher,2,Dining Room,2.87,17.22,30,Saturday,False
+2025-06-08 23:00:00,Fan,4,Bedroom,1.94,11.64,27,Sunday,True
+2025-06-19 23:00:00,Washing Machine,2,Laundry Room,3.02,18.12,33,Thursday,False
+2025-07-22 22:00:00,Washing Machine,3,Living Room,3.85,23.1,25,Tuesday,False
+2025-05-11 10:00:00,Microwave,3,Kitchen,2.59,15.54,29,Sunday,True
+2025-06-05 04:00:00,TV,2,Dining Room,2.1,12.6,25,Thursday,False
+2025-06-03 13:00:00,Heater,4,Living Room,6.5,39.0,17,Tuesday,True
+2025-07-25 16:00:00,Dishwasher,2,Laundry Room,2.96,17.76,22,Friday,False
+2025-07-04 15:00:00,Heater,1,Bathroom,1.73,10.38,10,Friday,False
+2025-06-02 08:00:00,TV,2,Living Room,1.32,7.92,32,Monday,False
+2025-05-06 05:00:00,Fan,5,Kitchen,1.82,10.92,21,Tuesday,True
+2025-07-01 10:00:00,Fan,6,Bedroom,2.36,14.16,28,Tuesday,True
+2025-05-08 12:00:00,Microwave,5,Kitchen,1.96,11.76,31,Thursday,False
+2025-04-30 00:00:00,AC,6,Laundry Room,18.57,111.42,34,Wednesday,True
+2025-06-21 02:00:00,Heater,6,Laundry Room,11.06,66.36,15,Saturday,True
+2025-06-25 12:00:00,Light,3,Bedroom,0.21,1.26,22,Wednesday,False
+2025-04-23 09:00:00,Oven,5,Bedroom,10.49,62.94,123,Wednesday,True
+2025-07-19 18:00:00,Oven,6,Bathroom,13.9,83.4,143,Saturday,True
+2025-06-18 00:00:00,Heater,2,Bathroom,4.1,24.6,14,Wednesday,False
+2025-05-30 15:00:00,Washing Machine,4,Bathroom,6.58,39.48,28,Friday,True
+2025-05-05 00:00:00,Heater,4,Bedroom,7.73,46.38,13,Monday,True
+2025-07-14 02:00:00,Washing Machine,2,Bedroom,3.35,20.1,21,Monday,False
+2025-07-02 13:00:00,Refrigerator,6,Laundry Room,4.88,29.28,8,Wednesday,True
+2025-07-13 01:00:00,Refrigerator,2,Laundry Room,1.91,11.46,7,Sunday,True
+2025-05-15 05:00:00,Oven,1,Dining Room,1.77,10.62,187,Thursday,False
+2025-07-04 10:00:00,Heater,1,Bedroom,1.56,9.36,11,Friday,False
+2025-07-19 14:00:00,Microwave,5,Bathroom,3.79,22.74,22,Saturday,True
+2025-07-10 08:00:00,Microwave,3,Living Room,2.87,17.22,27,Thursday,True
+2025-06-21 08:00:00,Refrigerator,6,Living Room,3.69,22.14,4,Saturday,True
+2025-04-29 12:00:00,Microwave,3,Dining Room,1.17,7.02,21,Tuesday,False
+2025-06-05 16:00:00,Heater,3,Laundry Room,5.8,34.8,16,Thursday,False
+2025-06-20 12:00:00,Washing Machine,6,Bedroom,9.13,54.78,33,Friday,True
+2025-05-16 16:00:00,Dishwasher,1,Laundry Room,1.34,8.04,26,Friday,False
+2025-05-26 15:00:00,Light,3,Bathroom,0.17,1.02,34,Monday,False
+2025-07-18 05:00:00,Light,6,Living Room,0.82,4.92,31,Friday,True
+2025-07-05 02:00:00,Heater,3,Laundry Room,4.65,27.9,17,Saturday,False
+2025-05-16 02:00:00,Light,6,Kitchen,0.54,3.24,25,Friday,False
+2025-06-25 10:00:00,Heater,1,Bedroom,1.95,11.7,18,Wednesday,False
+2025-04-19 15:00:00,Refrigerator,4,Laundry Room,2.71,16.26,4,Saturday,True
+2025-04-27 05:00:00,Microwave,5,Dining Room,4.24,25.44,31,Sunday,True
+2025-04-20 21:00:00,Washing Machine,1,Bedroom,1.45,8.7,20,Sunday,False
+2025-07-04 16:00:00,AC,1,Living Room,2.84,17.04,40,Friday,False
+2025-04-29 18:00:00,Microwave,1,Living Room,0.57,3.42,32,Tuesday,False
+2025-06-01 20:00:00,Washing Machine,3,Kitchen,5.36,32.16,37,Sunday,True
+2025-04-30 11:00:00,Heater,2,Laundry Room,4.22,25.32,19,Wednesday,False
+2025-06-12 13:00:00,Washing Machine,2,Living Room,3.91,23.46,25,Thursday,False
+2025-06-09 16:00:00,Fan,1,Dining Room,0.47,2.82,30,Monday,False
+2025-05-02 19:00:00,Light,2,Laundry Room,0.26,1.56,35,Friday,False
+2025-06-12 10:00:00,Oven,2,Kitchen,4.73,28.38,147,Thursday,False
+2025-06-01 13:00:00,Microwave,4,Dining Room,1.2,7.2,24,Sunday,False
+2025-06-06 19:00:00,Fan,5,Dining Room,1.72,10.32,26,Friday,True
+2025-05-06 10:00:00,AC,6,Dining Room,17.5,105.0,40,Tuesday,True
+2025-05-16 19:00:00,AC,6,Kitchen,17.27,103.62,38,Friday,True
+2025-05-05 15:00:00,Refrigerator,1,Dining Room,0.77,4.62,5,Monday,False
+2025-05-13 13:00:00,Microwave,4,Laundry Room,1.48,8.88,29,Tuesday,False
+2025-07-27 02:00:00,Heater,2,Bathroom,3.66,21.96,10,Sunday,False
+2025-06-18 02:00:00,Refrigerator,2,Bedroom,1.31,7.86,5,Wednesday,False
+2025-07-03 00:00:00,TV,5,Living Room,6.03,36.18,31,Thursday,True
+2025-07-27 14:00:00,AC,2,Kitchen,6.81,40.86,41,Sunday,False
+2025-05-04 15:00:00,Oven,3,Laundry Room,5.25,31.5,120,Sunday,False
+2025-06-04 01:00:00,Light,4,Bedroom,0.77,4.62,23,Wednesday,True
+2025-05-23 03:00:00,Oven,5,Laundry Room,8.73,52.38,118,Friday,True
+2025-04-18 05:00:00,Light,1,Dining Room,0.11,0.66,25,Friday,False
+2025-06-24 15:00:00,Microwave,4,Living Room,2.55,15.3,21,Tuesday,True
+2025-07-05 10:00:00,Light,2,Living Room,0.11,0.66,21,Saturday,False
+2025-05-27 05:00:00,TV,6,Bedroom,5.52,33.12,34,Tuesday,True
+2025-05-16 18:00:00,Heater,3,Bedroom,6.73,40.38,12,Friday,True
+2025-05-03 14:00:00,Oven,4,Laundry Room,11.6,69.6,109,Saturday,True
+2025-04-25 18:00:00,TV,5,Bedroom,5.15,30.9,21,Friday,True
+2025-05-01 01:00:00,TV,4,Laundry Room,5.57,33.42,30,Thursday,True
+2025-07-07 09:00:00,Heater,3,Bedroom,4.92,29.52,13,Monday,False
+2025-07-17 12:00:00,Washing Machine,2,Living Room,2.85,17.1,40,Thursday,False
+2025-05-10 16:00:00,TV,1,Laundry Room,1.27,7.62,27,Saturday,False
+2025-06-10 11:00:00,AC,1,Bedroom,2.89,17.34,34,Tuesday,False
+2025-05-10 10:00:00,Washing Machine,3,Laundry Room,3.16,18.96,33,Saturday,False
+2025-05-31 16:00:00,Oven,5,Kitchen,12.66,75.96,165,Saturday,True
+2025-07-20 11:00:00,TV,5,Bathroom,4.26,25.56,33,Sunday,True
+2025-07-19 21:00:00,Heater,3,Kitchen,5.31,31.86,19,Saturday,False
+2025-05-06 13:00:00,Fan,6,Bathroom,1.36,8.16,34,Tuesday,True
+2025-06-18 04:00:00,AC,3,Bathroom,8.44,50.64,35,Wednesday,True
+2025-07-24 10:00:00,Heater,4,Bedroom,6.68,40.08,13,Thursday,True
+2025-05-22 23:00:00,Washing Machine,4,Dining Room,4.8,28.8,40,Thursday,True
+2025-06-26 21:00:00,Oven,5,Bedroom,8.68,52.08,246,Thursday,True
+2025-07-20 05:00:00,Light,3,Living Room,0.54,3.24,35,Sunday,False
+2025-07-08 22:00:00,Microwave,3,Kitchen,2.16,12.96,35,Tuesday,True
+2025-06-22 06:00:00,TV,6,Kitchen,6.32,37.92,21,Sunday,True
+2025-04-24 18:00:00,AC,5,Bedroom,15.87,95.22,38,Thursday,True
+2025-05-08 21:00:00,Fan,6,Bedroom,2.86,17.16,28,Thursday,True
+2025-05-20 14:00:00,Dishwasher,4,Living Room,4.43,26.58,35,Tuesday,True
+2025-07-15 06:00:00,Dishwasher,1,Kitchen,1.49,8.94,22,Tuesday,False
+2025-07-20 23:00:00,Microwave,2,Bedroom,1.82,10.92,22,Sunday,False
+2025-05-26 14:00:00,Microwave,4,Living Room,3.59,21.54,35,Monday,True
+2025-06-18 07:00:00,Fan,4,Bedroom,1.93,11.58,26,Wednesday,True
+2025-04-27 13:00:00,Washing Machine,1,Dining Room,1.15,6.9,40,Sunday,False
+2025-05-07 22:00:00,Washing Machine,6,Bedroom,10.2,61.2,20,Wednesday,True
+2025-06-29 16:00:00,TV,3,Laundry Room,2.08,12.48,31,Sunday,False
+2025-06-13 17:00:00,TV,5,Kitchen,6.57,39.42,21,Friday,True
+2025-06-17 12:00:00,Washing Machine,1,Dining Room,1.13,6.78,39,Tuesday,False
+2025-05-10 10:00:00,Refrigerator,2,Laundry Room,1.26,7.56,8,Saturday,False
+2025-07-26 19:00:00,Washing Machine,1,Laundry Room,1.65,9.9,32,Saturday,False
+2025-04-28 17:00:00,Microwave,1,Bedroom,0.5,3.0,26,Monday,False
+2025-07-10 19:00:00,Dishwasher,3,Dining Room,4.34,26.04,45,Thursday,True
+2025-07-08 17:00:00,Oven,1,Kitchen,2.87,17.22,109,Tuesday,False
+2025-07-11 07:00:00,TV,3,Living Room,1.85,11.1,24,Friday,False
+2025-05-26 09:00:00,TV,2,Kitchen,1.41,8.46,35,Monday,False
+2025-05-18 13:00:00,TV,5,Kitchen,6.37,38.22,26,Sunday,True
+2025-06-24 07:00:00,Oven,4,Living Room,9.52,57.12,220,Tuesday,True
+2025-06-09 00:00:00,AC,6,Laundry Room,16.07,96.42,37,Monday,True
+2025-05-14 04:00:00,Fan,2,Living Room,0.28,1.68,25,Wednesday,False
+2025-06-12 05:00:00,Oven,6,Bathroom,13.19,79.14,127,Thursday,True
+2025-05-16 07:00:00,Heater,2,Dining Room,3.6,21.6,15,Friday,False
+2025-06-08 21:00:00,Heater,3,Kitchen,7.32,43.92,10,Sunday,True
+2025-05-27 01:00:00,Microwave,2,Living Room,1.4,8.4,28,Tuesday,False
+2025-06-29 00:00:00,Oven,4,Bathroom,10.12,60.72,144,Sunday,True
+2025-07-11 04:00:00,Washing Machine,5,Bedroom,5.77,34.62,24,Friday,True
+2025-06-16 22:00:00,Oven,4,Bathroom,9.43,56.58,153,Monday,True
+2025-07-02 02:00:00,Oven,3,Living Room,6.88,41.28,245,Wednesday,True
+2025-07-04 13:00:00,Heater,3,Living Room,5.86,35.16,14,Friday,False
+2025-05-14 00:00:00,Fan,5,Bedroom,1.66,9.96,35,Wednesday,True
+2025-07-06 00:00:00,TV,4,Kitchen,2.69,16.14,33,Sunday,True
+2025-07-08 13:00:00,Refrigerator,6,Kitchen,4.91,29.46,4,Tuesday,True
+2025-06-13 16:00:00,TV,1,Dining Room,0.99,5.94,30,Friday,False
+2025-07-24 07:00:00,Light,3,Laundry Room,0.49,2.94,30,Thursday,False
+2025-05-10 23:00:00,TV,5,Dining Room,6.58,39.48,29,Saturday,True
+2025-07-22 09:00:00,Fan,4,Dining Room,1.39,8.34,34,Tuesday,True
+2025-05-23 05:00:00,Microwave,1,Laundry Room,0.8,4.8,27,Friday,False
+2025-04-25 03:00:00,Light,6,Living Room,0.79,4.74,23,Friday,True
+2025-06-10 09:00:00,Light,6,Dining Room,0.98,5.88,32,Tuesday,True
+2025-07-03 10:00:00,Dishwasher,1,Bathroom,1.08,6.48,30,Thursday,False
+2025-07-16 00:00:00,Oven,4,Kitchen,11.15,66.9,120,Wednesday,True
+2025-07-03 06:00:00,Fan,1,Bathroom,0.2,1.2,22,Thursday,False
+2025-05-01 11:00:00,Oven,1,Laundry Room,1.99,11.94,157,Thursday,False
+2025-06-28 02:00:00,Microwave,4,Dining Room,2.67,16.02,35,Saturday,True
+2025-07-17 23:00:00,Heater,4,Bedroom,9.72,58.32,11,Thursday,True
+2025-05-20 14:00:00,Washing Machine,5,Bedroom,5.06,30.36,32,Tuesday,True
+2025-05-26 21:00:00,Dishwasher,3,Living Room,3.83,22.98,38,Monday,True
+2025-06-26 09:00:00,Oven,6,Kitchen,10.32,61.92,178,Thursday,True
+2025-06-22 00:00:00,Washing Machine,5,Bathroom,6.39,38.34,27,Sunday,True
+2025-07-08 05:00:00,AC,5,Dining Room,16.62,99.72,37,Tuesday,True
+2025-07-20 14:00:00,Microwave,5,Dining Room,1.59,9.54,21,Sunday,False
+2025-06-25 18:00:00,Fan,5,Laundry Room,1.61,9.66,31,Wednesday,True
+2025-06-09 12:00:00,Refrigerator,3,Kitchen,1.84,11.04,5,Monday,True
+2025-07-16 18:00:00,Heater,5,Living Room,8.06,48.36,11,Wednesday,True
+2025-05-07 04:00:00,AC,5,Bathroom,16.78,100.68,35,Wednesday,True
+2025-06-08 16:00:00,TV,3,Kitchen,3.14,18.84,26,Sunday,True
+2025-07-02 09:00:00,Refrigerator,2,Laundry Room,1.49,8.94,5,Wednesday,False
+2025-04-28 19:00:00,Oven,5,Bathroom,7.95,47.7,182,Monday,True
+2025-07-25 15:00:00,Heater,2,Living Room,3.98,23.88,11,Friday,False
+2025-05-02 13:00:00,AC,6,Dining Room,16.51,99.06,39,Friday,True
+2025-06-17 22:00:00,Dishwasher,5,Kitchen,5.92,35.52,33,Tuesday,True
+2025-06-12 17:00:00,TV,2,Living Room,2.23,13.38,21,Thursday,False
+2025-07-09 12:00:00,Heater,3,Kitchen,7.27,43.62,14,Wednesday,True
+2025-05-13 06:00:00,Oven,3,Kitchen,6.03,36.18,113,Tuesday,True
+2025-04-24 03:00:00,Refrigerator,1,Kitchen,0.89,5.34,5,Thursday,False
+2025-05-25 21:00:00,Light,6,Bathroom,0.34,2.04,27,Sunday,False
+2025-06-20 10:00:00,Heater,2,Living Room,3.14,18.84,16,Friday,False
+2025-07-04 14:00:00,Light,2,Bathroom,0.1,0.6,28,Friday,False
+2025-06-22 19:00:00,AC,1,Dining Room,2.54,15.24,35,Sunday,False
+2025-05-04 20:00:00,TV,5,Bedroom,3.4,20.4,29,Sunday,True
+2025-05-27 10:00:00,Heater,4,Dining Room,7.34,44.04,17,Tuesday,True
+2025-05-21 15:00:00,Light,2,Laundry Room,0.11,0.66,24,Wednesday,False
+2025-07-16 16:00:00,Refrigerator,1,Dining Room,0.85,5.1,7,Wednesday,False
+2025-06-08 09:00:00,TV,6,Living Room,8.07,48.42,32,Sunday,True
+2025-06-13 13:00:00,Fan,6,Dining Room,0.69,4.14,31,Friday,False
+2025-06-21 16:00:00,Heater,4,Laundry Room,6.83,40.98,20,Saturday,True
+2025-07-09 20:00:00,Heater,1,Bedroom,2.34,14.04,15,Wednesday,False
+2025-04-21 15:00:00,Microwave,3,Laundry Room,2.48,14.88,22,Monday,True
+2025-05-29 12:00:00,Heater,4,Bedroom,6.6,39.6,13,Thursday,True
+2025-04-29 13:00:00,TV,4,Laundry Room,3.95,23.7,35,Tuesday,True
+2025-07-11 04:00:00,Washing Machine,3,Living Room,3.6,21.6,37,Friday,False
+2025-07-11 08:00:00,AC,1,Kitchen,3.44,20.64,38,Friday,False
+2025-07-03 09:00:00,Fan,1,Dining Room,0.25,1.5,27,Thursday,False
+2025-05-19 11:00:00,Light,6,Living Room,0.8,4.8,31,Monday,True
+2025-06-16 21:00:00,Fan,1,Bathroom,0.24,1.44,23,Monday,False
+2025-06-22 23:00:00,Oven,6,Kitchen,14.05,84.3,200,Sunday,True
+2025-04-30 01:00:00,Fan,6,Bathroom,1.89,11.34,33,Wednesday,True
+2025-04-20 21:00:00,Microwave,5,Bedroom,4.26,25.56,26,Sunday,True
+2025-05-26 14:00:00,TV,6,Laundry Room,3.12,18.72,23,Monday,True
+2025-07-13 10:00:00,Dishwasher,1,Kitchen,1.35,8.1,44,Sunday,False
+2025-07-16 02:00:00,Light,5,Laundry Room,0.39,2.34,31,Wednesday,False
+2025-05-24 22:00:00,Heater,2,Bedroom,3.36,20.16,20,Saturday,False
+2025-05-31 12:00:00,Heater,6,Bathroom,10.42,62.52,11,Saturday,True
+2025-07-03 02:00:00,Heater,5,Bathroom,8.36,50.16,15,Thursday,True
+2025-07-18 17:00:00,TV,5,Living Room,6.31,37.86,28,Friday,True
+2025-06-02 10:00:00,Refrigerator,4,Bedroom,2.83,16.98,4,Monday,True
+2025-05-09 15:00:00,Washing Machine,1,Bathroom,1.47,8.82,20,Friday,False
+2025-07-17 17:00:00,Microwave,4,Kitchen,1.66,9.96,24,Thursday,False
+2025-07-12 18:00:00,AC,6,Kitchen,19.71,118.26,41,Saturday,True
+2025-07-13 06:00:00,Oven,3,Laundry Room,6.59,39.54,123,Sunday,True
+2025-06-10 05:00:00,Refrigerator,2,Dining Room,1.87,11.22,4,Tuesday,True
+2025-06-14 06:00:00,Microwave,4,Bedroom,2.48,14.88,21,Saturday,True
+2025-06-29 05:00:00,Microwave,6,Laundry Room,2.54,15.24,22,Sunday,True
+2025-05-02 17:00:00,Refrigerator,3,Kitchen,2.82,16.92,5,Friday,True
+2025-04-20 02:00:00,Dishwasher,6,Dining Room,7.28,43.68,37,Sunday,True
+2025-07-27 20:00:00,Oven,1,Kitchen,2.99,17.94,212,Sunday,False
+2025-05-26 17:00:00,Refrigerator,4,Bedroom,3.75,22.5,6,Monday,True
+2025-07-10 04:00:00,Light,1,Laundry Room,0.09,0.54,27,Thursday,False
+2025-07-11 07:00:00,AC,5,Living Room,16.83,100.98,34,Friday,True
+2025-06-27 08:00:00,TV,3,Bedroom,3.57,21.42,35,Friday,True
+2025-05-16 13:00:00,Dishwasher,4,Bedroom,5.84,35.04,34,Friday,True
+2025-05-07 06:00:00,Dishwasher,4,Bathroom,4.36,26.16,25,Wednesday,True
+2025-07-26 14:00:00,Heater,2,Laundry Room,4.37,26.22,20,Saturday,False
+2025-06-21 18:00:00,Washing Machine,1,Kitchen,1.65,9.9,26,Saturday,False
+2025-07-25 17:00:00,Dishwasher,5,Laundry Room,6.85,41.1,21,Friday,True
+2025-06-11 16:00:00,Fan,6,Bedroom,0.83,4.98,35,Wednesday,False
+2025-07-05 16:00:00,Heater,5,Bathroom,11.9,71.4,12,Saturday,True
+2025-04-25 10:00:00,Light,1,Dining Room,0.2,1.2,27,Friday,False
+2025-04-21 10:00:00,AC,5,Bedroom,13.55,81.3,38,Monday,True
+2025-06-22 20:00:00,Oven,2,Bedroom,4.62,27.72,172,Sunday,False
+2025-07-27 08:00:00,AC,1,Bathroom,2.54,15.24,41,Sunday,False
+2025-06-11 18:00:00,Microwave,3,Bathroom,2.73,16.38,24,Wednesday,True
+2025-07-22 11:00:00,Dishwasher,3,Kitchen,3.17,19.02,44,Tuesday,True
+2025-07-21 10:00:00,Microwave,3,Kitchen,2.05,12.3,23,Monday,True
+2025-06-27 04:00:00,Oven,5,Living Room,8.63,51.78,202,Friday,True
+2025-05-07 01:00:00,Microwave,6,Living Room,5.29,31.74,26,Wednesday,True
+2025-07-23 07:00:00,Light,6,Bathroom,0.45,2.7,29,Wednesday,False
+2025-07-11 08:00:00,TV,1,Living Room,1.26,7.56,28,Friday,False
+2025-04-30 23:00:00,Heater,4,Living Room,6.51,39.06,17,Wednesday,True
+2025-07-15 01:00:00,TV,6,Bedroom,5.82,34.92,22,Tuesday,True
+2025-07-19 15:00:00,TV,1,Living Room,1.46,8.76,32,Saturday,False
+2025-07-07 19:00:00,TV,1,Living Room,1.25,7.5,31,Monday,False
+2025-06-12 11:00:00,Oven,3,Kitchen,5.52,33.12,104,Thursday,False
+2025-07-24 21:00:00,TV,2,Kitchen,1.99,11.94,30,Thursday,False
+2025-05-09 14:00:00,Oven,2,Laundry Room,4.97,29.82,106,Friday,False
+2025-04-20 09:00:00,Oven,2,Living Room,5.5,33.0,114,Sunday,False
+2025-06-23 01:00:00,Dishwasher,2,Laundry Room,2.55,15.3,40,Monday,False
+2025-05-28 09:00:00,Dishwasher,2,Dining Room,2.36,14.16,41,Wednesday,False
+2025-07-16 03:00:00,Fan,5,Bathroom,1.68,10.08,30,Wednesday,True
+2025-06-27 07:00:00,AC,1,Bathroom,2.91,17.46,41,Friday,False
+2025-07-24 15:00:00,Heater,2,Kitchen,3.74,22.44,15,Thursday,False
+2025-05-10 19:00:00,Light,3,Laundry Room,0.51,3.06,29,Saturday,False
+2025-07-27 16:00:00,Washing Machine,5,Dining Room,6.24,37.44,22,Sunday,True
+2025-05-24 21:00:00,Heater,4,Laundry Room,9.16,54.96,10,Saturday,True
+2025-07-13 16:00:00,Washing Machine,4,Laundry Room,7.12,42.72,28,Sunday,True
+2025-07-26 20:00:00,Microwave,6,Dining Room,4.48,26.88,29,Saturday,True
+2025-06-23 15:00:00,AC,3,Laundry Room,10.2,61.2,39,Monday,True
+2025-06-03 04:00:00,Refrigerator,4,Living Room,2.49,14.94,6,Tuesday,True
+2025-05-01 19:00:00,Dishwasher,5,Laundry Room,6.28,37.68,38,Thursday,True
+2025-06-14 15:00:00,Light,5,Kitchen,0.42,2.52,22,Saturday,False
+2025-04-28 09:00:00,Microwave,4,Kitchen,2.84,17.04,21,Monday,True
+2025-04-19 20:00:00,TV,5,Laundry Room,6.13,36.78,35,Saturday,True
+2025-04-19 06:00:00,Dishwasher,6,Laundry Room,8.28,49.68,26,Saturday,True
+2025-05-15 14:00:00,AC,6,Bathroom,18.58,111.48,36,Thursday,True
+2025-07-20 14:00:00,AC,5,Living Room,13.03,78.18,37,Sunday,True
+2025-06-05 00:00:00,Microwave,6,Kitchen,2.4,14.4,23,Thursday,True
+2025-07-07 10:00:00,Microwave,1,Laundry Room,0.32,1.92,33,Monday,False
+2025-05-01 11:00:00,Fan,5,Bedroom,2.47,14.82,29,Thursday,True
+2025-06-30 13:00:00,Refrigerator,2,Bathroom,1.77,10.62,4,Monday,False
+2025-05-02 07:00:00,AC,6,Dining Room,18.43,110.58,35,Friday,True
+2025-04-27 13:00:00,Dishwasher,2,Living Room,2.67,16.02,21,Sunday,False
+2025-07-01 10:00:00,Washing Machine,5,Bedroom,6.69,40.14,29,Tuesday,True
+2025-07-12 23:00:00,Refrigerator,6,Kitchen,4.72,28.32,6,Saturday,True
+2025-05-12 07:00:00,Light,5,Dining Room,0.98,5.88,31,Monday,True
+2025-07-06 22:00:00,Oven,1,Laundry Room,2.92,17.52,107,Sunday,False
+2025-05-13 15:00:00,Microwave,5,Kitchen,3.22,19.32,23,Tuesday,True
+2025-06-23 04:00:00,Refrigerator,2,Kitchen,1.68,10.08,4,Monday,False
+2025-05-27 20:00:00,Refrigerator,2,Bedroom,1.72,10.32,8,Tuesday,False
+2025-07-25 14:00:00,Washing Machine,1,Living Room,1.54,9.24,35,Friday,False
+2025-05-18 21:00:00,Fan,3,Dining Room,0.31,1.86,30,Sunday,False
+2025-07-27 14:00:00,AC,6,Kitchen,19.07,114.42,41,Sunday,True
+2025-05-02 06:00:00,Heater,3,Living Room,5.81,34.86,20,Friday,False
+2025-06-09 14:00:00,Dishwasher,6,Laundry Room,7.6,45.6,39,Monday,True
+2025-07-09 11:00:00,Dishwasher,2,Living Room,2.15,12.9,32,Wednesday,False
+2025-05-01 13:00:00,Dishwasher,6,Dining Room,7.66,45.96,25,Thursday,True
+2025-06-12 21:00:00,Washing Machine,5,Living Room,8.66,51.96,28,Thursday,True
+2025-06-09 02:00:00,Microwave,2,Kitchen,0.62,3.72,21,Monday,False
+2025-05-23 22:00:00,Microwave,1,Bedroom,0.65,3.9,32,Friday,False
+2025-05-23 05:00:00,Heater,5,Bedroom,7.65,45.9,11,Friday,True
+2025-07-04 14:00:00,Refrigerator,5,Dining Room,4.34,26.04,6,Friday,True
+2025-05-22 03:00:00,Washing Machine,6,Laundry Room,9.04,54.24,39,Thursday,True
+2025-06-20 18:00:00,AC,5,Living Room,13.24,79.44,42,Friday,True
+2025-05-08 15:00:00,Heater,5,Dining Room,9.16,54.96,16,Thursday,True
+2025-04-22 08:00:00,Heater,5,Kitchen,10.55,63.3,13,Tuesday,True
+2025-07-05 15:00:00,Fan,5,Bathroom,1.94,11.64,31,Saturday,True
+2025-05-18 05:00:00,Dishwasher,5,Kitchen,5.17,31.02,31,Sunday,True
+2025-06-13 04:00:00,AC,5,Living Room,13.93,83.58,34,Friday,True
+2025-05-24 12:00:00,AC,2,Bedroom,5.53,33.18,34,Saturday,False
+2025-04-23 13:00:00,AC,6,Kitchen,20.16,120.96,39,Wednesday,True
+2025-06-09 07:00:00,Fan,1,Kitchen,0.2,1.2,33,Monday,False
+2025-04-22 03:00:00,TV,4,Kitchen,3.26,19.56,34,Tuesday,True
+2025-05-31 11:00:00,Microwave,4,Living Room,3.1,18.6,29,Saturday,True
+2025-05-25 04:00:00,Heater,3,Bathroom,7.43,44.58,16,Sunday,True
+2025-05-07 02:00:00,Refrigerator,6,Bedroom,4.59,27.54,4,Wednesday,True
+2025-05-28 09:00:00,Oven,3,Laundry Room,6.23,37.38,200,Wednesday,True
+2025-05-06 03:00:00,Refrigerator,6,Kitchen,5.89,35.34,7,Tuesday,True
+2025-05-18 01:00:00,Dishwasher,4,Bedroom,4.28,25.68,26,Sunday,True
+2025-05-17 10:00:00,TV,2,Laundry Room,1.38,8.28,30,Saturday,False
+2025-07-15 08:00:00,Refrigerator,4,Dining Room,2.84,17.04,8,Tuesday,True
+2025-07-16 05:00:00,Microwave,2,Living Room,1.41,8.46,22,Wednesday,False
+2025-05-13 19:00:00,Oven,4,Living Room,8.01,48.06,211,Tuesday,True
+2025-06-22 07:00:00,AC,2,Dining Room,5.15,30.9,33,Sunday,False
+2025-07-15 12:00:00,Oven,3,Dining Room,8.89,53.34,131,Tuesday,True
+2025-04-20 11:00:00,Fan,5,Living Room,2.02,12.12,23,Sunday,True
+2025-05-01 09:00:00,Refrigerator,1,Living Room,0.9,5.4,4,Thursday,False
+2025-07-04 23:00:00,Oven,5,Living Room,12.09,72.54,182,Friday,True
+2025-05-22 00:00:00,Refrigerator,2,Laundry Room,1.67,10.02,4,Thursday,False
+2025-05-03 11:00:00,Light,4,Dining Room,0.72,4.32,26,Saturday,True
+2025-05-30 01:00:00,Oven,1,Bedroom,2.96,17.76,132,Friday,False
+2025-06-23 09:00:00,Dishwasher,3,Dining Room,3.25,19.5,38,Monday,True
+2025-05-14 21:00:00,Oven,2,Living Room,5.01,30.06,113,Wednesday,False
+2025-06-07 02:00:00,AC,4,Dining Room,12.36,74.16,37,Saturday,True
+2025-05-11 10:00:00,Fan,2,Dining Room,0.7,4.2,20,Sunday,False
+2025-05-29 04:00:00,Oven,4,Bathroom,9.12,54.72,205,Thursday,True
+2025-05-11 16:00:00,TV,5,Bedroom,6.09,36.54,23,Sunday,True
+2025-07-03 23:00:00,Dishwasher,4,Laundry Room,4.46,26.76,24,Thursday,True
+2025-07-26 23:00:00,Light,4,Dining Room,0.72,4.32,23,Saturday,True
+2025-07-23 00:00:00,Fan,3,Bathroom,1.07,6.42,31,Wednesday,True
+2025-06-23 07:00:00,Refrigerator,3,Kitchen,1.96,11.76,4,Monday,True
+2025-07-27 09:00:00,Fan,4,Dining Room,1.76,10.56,28,Sunday,True
+2025-06-04 11:00:00,Heater,1,Bathroom,2.28,13.68,20,Wednesday,False
+2025-06-22 10:00:00,Oven,1,Kitchen,1.67,10.02,195,Sunday,False
+2025-06-15 21:00:00,Microwave,4,Bathroom,2.84,17.04,21,Sunday,True
+2025-06-26 14:00:00,Dishwasher,3,Bedroom,3.99,23.94,36,Thursday,True
+2025-06-21 17:00:00,Light,1,Laundry Room,0.15,0.9,28,Saturday,False
+2025-05-30 14:00:00,Refrigerator,1,Laundry Room,0.94,5.64,5,Friday,False
+2025-04-23 05:00:00,Heater,4,Laundry Room,9.49,56.94,18,Wednesday,True
+2025-06-09 18:00:00,Refrigerator,5,Dining Room,3.93,23.58,7,Monday,True
+2025-05-09 14:00:00,Oven,2,Laundry Room,5.74,34.44,197,Friday,False
+2025-05-17 17:00:00,Fan,5,Kitchen,2.46,14.76,25,Saturday,True
+2025-07-15 05:00:00,Fan,1,Bathroom,0.11,0.66,32,Tuesday,False
+2025-07-13 02:00:00,Light,5,Bathroom,0.89,5.34,27,Sunday,True
+2025-04-25 07:00:00,Heater,2,Laundry Room,3.83,22.98,19,Friday,False
+2025-06-01 11:00:00,Heater,2,Bathroom,4.9,29.4,11,Sunday,False
+2025-07-10 18:00:00,Refrigerator,5,Dining Room,3.44,20.64,8,Thursday,True
+2025-06-06 00:00:00,Light,3,Living Room,0.16,0.96,21,Friday,False
+2025-05-01 06:00:00,Oven,1,Bathroom,2.7,16.2,126,Thursday,False
+2025-04-29 06:00:00,Washing Machine,5,Bathroom,7.84,47.04,28,Tuesday,True
