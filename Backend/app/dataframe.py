@@ -1,6 +1,6 @@
 from sqlalchemy import inspect
-from models import EnergyUsage
-from db import SessionLocal
+from app.models import EnergyUsage
+from app.db import SessionLocal
 from fastapi.responses import JSONResponse
 from fastapi import APIRouter, Query
 import pandas as pd

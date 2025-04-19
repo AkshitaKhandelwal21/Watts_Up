@@ -2,8 +2,8 @@ from fastapi import APIRouter
 from sqlalchemy.orm import Session
 import random
 from datetime import datetime, timedelta
-from db import SessionLocal
-from models import EnergyUsage
+from app.db import SessionLocal
+from app.models import EnergyUsage
 import calendar
 import csv
 

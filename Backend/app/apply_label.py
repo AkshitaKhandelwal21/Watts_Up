@@ -1,8 +1,11 @@
 from fastapi import APIRouter
 from sqlalchemy.orm import Session
-from db import SessionLocal
-from models import EnergyUsage
+from app.db import SessionLocal
+from app.models import EnergyUsage, ClusterInsights
 from datetime import datetime
+import pandas as pd
+import numpy as np
+from sklearn.cluster import KMeans
 
 label_router = APIRouter()
 
@@ -57,19 +60,7 @@ def apply_ai_labels():
         session.close()
 
 
-
-
-
-from fastapi import APIRouter
-from db import SessionLocal
-from models import EnergyUsage, ClusterInsights
-from sklearn.cluster import KMeans
-import pandas as pd
-import numpy as np
-
-cluster_router = APIRouter()
-
-@cluster_router.post("/apply-clustering")
+@label_router.post("/apply-clustering")
 def apply_clustering():
     session = SessionLocal()
     try:
@@ -91,7 +82,6 @@ def apply_clustering():
 
         session.query(ClusterInsights).delete()
 
-        # Store average values by cluster & appliance
         grouped = df.groupby(["appliance", "cluster"]).agg({
             "duration": "mean",
             "power": "mean",
