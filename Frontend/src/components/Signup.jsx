@@ -1,19 +1,23 @@
 import React, { useState } from "react";
-import { Eye, EyeOff, Zap, Mail, Lock } from "lucide-react";
+import { Eye, EyeOff, Zap, Mail, Lock, User, Check } from "lucide-react";
 
-function Login() {
+function SignUp() {
   const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [agreeTerms, setAgreeTerms] = useState(false);
 
-  const handleLogin = (e) => {
+  const handleSignUp = (e) => {
     e.preventDefault();
     setIsLoading(true);
-    // Simulate login process
+    // Simulate signup process
     setTimeout(() => {
       setIsLoading(false);
-      // Redirect to dashboard after login process
+      // Redirect to dashboard after signup process
       window.location.href = "/dashboard";
     }, 1500);
   };
@@ -39,13 +43,27 @@ function Login() {
         </div>
         
         <h2 className="text-center text-xl font-semibold text-gray-700 mb-6">
-          Welcome back!
+          Create your account
         </h2>
         <p className="text-center text-gray-500 mb-8">
-          Log in to monitor and optimize your energy usage
+          Join Watt'sUp to start monitoring your energy consumption
         </p>
         
-        <form onSubmit={handleLogin} className="space-y-6">
+        <form onSubmit={handleSignUp} className="space-y-5">
+          <div className="relative">
+            <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+              <User size={18} className="text-gray-400" />
+            </div>
+            <input
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder="Full name"
+              className="w-full pl-10 pr-3 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all"
+              required
+            />
+          </div>
+          
           <div className="relative">
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
               <Mail size={18} className="text-gray-400" />
@@ -85,30 +103,51 @@ function Login() {
             </button>
           </div>
           
-          <div className="flex items-center justify-between">
-            <div className="flex items-center">
-              <input
-                id="remember-me"
-                name="remember-me"
-                type="checkbox"
-                className="h-4 w-4 text-emerald-500 border-gray-300 rounded focus:ring-emerald-500"
-              />
-              <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-700">
-                Remember me
-              </label>
+          <div className="relative">
+            <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+              <Lock size={18} className="text-gray-400" />
             </div>
-            <div className="text-sm">
-              <a href="/forgot" className="font-medium text-emerald-600 hover:text-emerald-500">
-                Forgot password?
-              </a>
-            </div>
+            <input
+              type={showConfirmPassword ? "text" : "password"}
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+              placeholder="Confirm password"
+              className="w-full pl-10 pr-10 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all"
+              required
+            />
+            <button
+              type="button"
+              onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+              className="absolute inset-y-0 right-0 pr-3 flex items-center"
+            >
+              {showConfirmPassword ? (
+                <EyeOff size={18} className="text-gray-400 hover:text-gray-700" />
+              ) : (
+                <Eye size={18} className="text-gray-400 hover:text-gray-700" />
+              )}
+            </button>
           </div>
+          
+          {/* <div className="flex items-center">
+            <input
+              id="agree-terms"
+              name="agree-terms"
+              type="checkbox"
+              checked={agreeTerms}
+              onChange={(e) => setAgreeTerms(e.target.checked)}
+              className="h-4 w-4 text-emerald-500 border-gray-300 rounded focus:ring-emerald-500"
+              required
+            />
+            <label htmlFor="agree-terms" className="ml-2 block text-sm text-gray-700">
+              I agree to the <a href="#" className="text-emerald-600 hover:text-emerald-500">Terms of Service</a> and <a href="#" className="text-emerald-600 hover:text-emerald-500">Privacy Policy</a>
+            </label>
+          </div> */}
           
           <button
             type="submit"
-            disabled={isLoading}
+            disabled={isLoading || !agreeTerms}
             className={`w-full flex items-center justify-center py-3 px-4 rounded-lg text-white font-medium transition-all duration-300 ${
-              isLoading 
+              isLoading || !agreeTerms
                 ? "bg-emerald-400 cursor-not-allowed" 
                 : "bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 shadow-md hover:shadow-lg"
             }`}
@@ -119,18 +158,18 @@ function Login() {
                   <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                   <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                 </svg>
-                Logging in...
+                Creating account...
               </>
             ) : (
-              "Sign in"
+              "Create account"
             )}
           </button>
         </form>
 
         <p className="mt-6 text-center text-sm text-gray-500">
-          Don't have an account?{" "}
-          <a href="signup" className="font-medium text-emerald-600 hover:text-emerald-500">
-            Sign up
+          Already have an account?{" "}
+          <a href="/" className="font-medium text-emerald-600 hover:text-emerald-500">
+            Sign in
           </a>
         </p>
 
@@ -138,7 +177,7 @@ function Login() {
         <div className="mt-8 p-3 bg-blue-50 rounded-lg border border-blue-100">
           <p className="text-xs text-blue-700 flex items-center">
             <Zap size={14} className="mr-1 text-blue-500" />
-            <span>Save up to 20% on your electricity bills with Watt'sUp energy insights</span>
+            <span>Join 10,000+ users saving energy with Watt'sUp intelligent monitoring</span>
           </p>
         </div>
       </div>
@@ -146,4 +185,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default SignUp;
