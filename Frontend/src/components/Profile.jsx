@@ -235,8 +235,8 @@ function Profile() {
                         className="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
                       />
                     </div>
-                  </div>
-                ) : (
+                  </div> 
+                ) : ( 
                   <div>
                     <h2 className="text-2xl font-bold text-gray-800 mb-1">{profile.name}</h2>
                     <div className="flex items-center mb-4">
@@ -249,8 +249,8 @@ function Profile() {
                       <Zap size={14} className="mr-1" />
                       <span className="text-sm font-medium">Goal: {profile.energyGoal}</span>
                     </div>
-                  </div>
-                )}
+                  </div> 
+                )} 
               <div className="flex mt-3">
             <button
               onClick={() => {
