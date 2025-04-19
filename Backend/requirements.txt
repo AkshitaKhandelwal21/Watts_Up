@@ -4,3 +4,6 @@ sqlalchemy
 pymysql
 pandas
 python-dotenv
+scikit-learn
+matplotlib
+numpy

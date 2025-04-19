@@ -15,86 +15,87 @@ import {
   Clock,
   User,
   Award,
-  LogOut
+  LogOut,
 } from "lucide-react";
 
 // Mock data for charts
 const mockEnergyData = {
   daily: [
-    { time: '6AM', usage: 2.1 },
-    { time: '9AM', usage: 3.5 },
-    { time: '12PM', usage: 4.2 },
-    { time: '3PM', usage: 3.8 },
-    { time: '6PM', usage: 5.6 },
-    { time: '9PM', usage: 4.9 },
-    { time: '12AM', usage: 2.3 },
+    { time: "6AM", usage: 2.1 },
+    { time: "9AM", usage: 3.5 },
+    { time: "12PM", usage: 4.2 },
+    { time: "3PM", usage: 3.8 },
+    { time: "6PM", usage: 5.6 },
+    { time: "9PM", usage: 4.9 },
+    { time: "12AM", usage: 2.3 },
   ],
   roomData: [
-    { name: 'Living Room', usage: 35 },
-    { name: 'Kitchen', usage: 25 },
-    { name: 'Bedroom', usage: 20 },
-    { name: 'Bathroom', usage: 15 },
-    { name: 'Others', usage: 5 },
+    { name: "Living Room", usage: 35 },
+    { name: "Kitchen", usage: 25 },
+    { name: "Bedroom", usage: 20 },
+    { name: "Bathroom", usage: 15 },
+    { name: "Others", usage: 5 },
   ],
   deviceData: [
-    { name: 'AC', usage: 45, status: 'high' },
-    { name: 'Geyser', usage: 20, status: 'normal' },
-    { name: 'Fridge', usage: 15, status: 'normal' },
-    { name: 'Lights', usage: 10, status: 'low' },
-    { name: 'TV', usage: 7, status: 'low' },
-    { name: 'Others', usage: 3, status: 'low' },
+    { name: "AC", usage: 45, status: "high" },
+    { name: "Geyser", usage: 20, status: "normal" },
+    { name: "Fridge", usage: 15, status: "normal" },
+    { name: "Lights", usage: 10, status: "low" },
+    { name: "TV", usage: 7, status: "low" },
+    { name: "Others", usage: 3, status: "low" },
   ],
   weekly: [
-    { day: 'Mon', usage: 15.2 },
-    { day: 'Tue', usage: 16.8 },
-    { day: 'Wed', usage: 14.5 },
-    { day: 'Thu', usage: 13.9 },
-    { day: 'Fri', usage: 17.2 },
-    { day: 'Sat', usage: 19.8 },
-    { day: 'Sun', usage: 18.3 },
+    { day: "Mon", usage: 15.2 },
+    { day: "Tue", usage: 16.8 },
+    { day: "Wed", usage: 14.5 },
+    { day: "Thu", usage: 13.9 },
+    { day: "Fri", usage: 17.2 },
+    { day: "Sat", usage: 19.8 },
+    { day: "Sun", usage: 18.3 },
   ],
   wastageAlerts: [
     {
-      device: 'AC',
-      issue: 'Running for extended periods',
-      wastage: '2.4 kWh',
-      recommendation: 'Try setting a timer to turn off after 3 hours',
-      time: '3:30 PM'
+      device: "AC",
+      issue: "Running for extended periods",
+      wastage: "2.4 kWh",
+      recommendation: "Try setting a timer to turn off after 3 hours",
+      time: "3:30 PM",
     },
     {
-      device: 'Geyser',
-      issue: 'High temperature setting',
-      wastage: '1.2 kWh',
-      recommendation: 'Reduce temperature by 5°C to save energy',
-      time: '7:15 AM'
+      device: "Geyser",
+      issue: "High temperature setting",
+      wastage: "1.2 kWh",
+      recommendation: "Reduce temperature by 5°C to save energy",
+      time: "7:15 AM",
     },
     {
-      device: 'Living Room Lights',
-      issue: 'Left on when room is empty',
-      wastage: '0.5 kWh',
-      recommendation: 'Consider motion sensors for automatic control',
-      time: '9:45 PM'
-    }
+      device: "Living Room Lights",
+      issue: "Left on when room is empty",
+      wastage: "0.5 kWh",
+      recommendation: "Consider motion sensors for automatic control",
+      time: "9:45 PM",
+    },
   ],
   gamification: {
     points: 324,
-    level: 'Energy Saver',
-    nextLevel: 'Power Guardian',
+    level: "Energy Saver",
+    nextLevel: "Power Guardian",
     pointsToNextLevel: 76,
-    dailyChallenge: 'Use natural light for 2 hours instead of artificial lighting',
+    dailyChallenge:
+      "Use natural light for 2 hours instead of artificial lighting",
     streakDays: 5,
-    badges: ['Early Adopter', 'Weekly Goal Crusher', 'Energy Detective']
-  }
+    badges: ["Early Adopter", "Weekly Goal Crusher", "Energy Detective"],
+  },
 };
 
-function Dashboard() {
-  const [timeRange, setTimeRange] = useState('daily');
+function Dashboard({ chartData = {} }) {
+  const [timeRange, setTimeRange] = useState("daily");
   const [tipIndex, setTipIndex] = useState(0);
 
   const energyTips = [
     "Your AC is running at peak efficiency when set to 24°C instead of 18°C. This small change can save up to 15% on cooling costs.",
     "The geyser used 20% more energy this week. Try reducing bath time by 2 minutes to save water and electricity.",
-    "We noticed your fridge consumes more at night. Avoid frequent opening during peak hours (6-10 PM) to optimize energy use."
+    "We noticed your fridge consumes more at night. Avoid frequent opening during peak hours (6-10 PM) to optimize energy use.",
   ];
 
   // Function to handle navigation
@@ -104,7 +105,7 @@ function Dashboard() {
 
   const handleLogout = () => {
     // You could add any logout logic here (clear tokens, etc.)
-    navigateTo('/');
+    navigateTo("/");
   };
 
   // Cycle through tips automatically
@@ -116,9 +117,26 @@ function Dashboard() {
   }, []);
 
   // Calculate comparison with previous week
-  const currentUsage = mockEnergyData.weekly.reduce((sum, day) => sum + day.usage, 0);
+  const currentUsage = mockEnergyData.weekly.reduce(
+    (sum, day) => sum + day.usage,
+    0
+  );
   const previousUsage = currentUsage * 1.15; // 15% higher last week
-  const savingPercentage = ((previousUsage - currentUsage) / previousUsage * 100).toFixed(1);
+  const savingPercentage = (
+    ((previousUsage - currentUsage) / previousUsage) *
+    100
+  ).toFixed(1);
+
+  const totalRoomCosumption = chartData?.room_consumption?.usage.reduce(
+    (accumulator, currentValue) => accumulator + currentValue,
+    0
+  );
+
+  const totalDeviceConsumption =
+    chartData?.appliance_power_cost?.power_usage.reduce(
+      (accumulator, currentValue) => accumulator + currentValue,
+      0
+    );
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 to-blue-50 p-4 md:p-6">
@@ -166,25 +184,29 @@ function Dashboard() {
             <h1 className="text-3xl font-bold text-gray-800">
               Smart Energy Dashboard
             </h1>
-            <p className="text-gray-600">Monitor, analyze, and optimize your home energy usage</p>
+            <p className="text-gray-600">
+              Monitor, analyze, and optimize your home energy usage
+            </p>
           </div>
 
           <div className="flex items-center mt-4 md:mt-0 space-x-2">
             <button
-              onClick={() => setTimeRange('daily')}
-              className={`px-4 py-2 rounded-lg transition-colors ${timeRange === 'daily'
-                ? 'bg-emerald-500 text-white'
-                : 'bg-white text-gray-700 hover:bg-gray-100'
-                }`}
+              onClick={() => setTimeRange("daily")}
+              className={`px-4 py-2 rounded-lg transition-colors ${
+                timeRange === "daily"
+                  ? "bg-emerald-500 text-white"
+                  : "bg-white text-gray-700 hover:bg-gray-100"
+              }`}
             >
               Today
             </button>
             <button
-              onClick={() => setTimeRange('weekly')}
-              className={`px-4 py-2 rounded-lg transition-colors ${timeRange === 'weekly'
-                ? 'bg-emerald-500 text-white'
-                : 'bg-white text-gray-700 hover:bg-gray-100'
-                }`}
+              onClick={() => setTimeRange("weekly")}
+              className={`px-4 py-2 rounded-lg transition-colors ${
+                timeRange === "weekly"
+                  ? "bg-emerald-500 text-white"
+                  : "bg-white text-gray-700 hover:bg-gray-100"
+              }`}
             >
               This Week
             </button>
@@ -248,33 +270,41 @@ function Dashboard() {
                   Energy Consumption
                 </h2>
                 <div className="text-sm text-gray-500">
-                  {timeRange === 'daily' ? 'Today, April 18' : 'April 12-18'}
+                  {timeRange === "daily" ? "Today, April 18" : "April 12-18"}
                 </div>
               </div>
               <div className="h-72 w-full">
                 {/* Energy consumption chart visualization */}
                 <div className="bg-gray-50 h-full rounded-lg flex items-end px-4 py-2 space-x-4">
-                  {timeRange === 'daily' ?
-                    mockEnergyData.daily.map((hour, i) => (
-                      <div key={i} className="flex flex-col items-center flex-1">
+                  {timeRange === "daily"
+                    ? mockEnergyData.daily.map((hour, i) => (
                         <div
-                          className="w-full bg-emerald-500 rounded-t-lg transition-all duration-500"
-                          style={{ height: `${hour.usage * 10}%` }}
-                        ></div>
-                        <span className="text-xs mt-2 text-gray-600">{hour.time}</span>
-                      </div>
-                    ))
-                    :
-                    mockEnergyData.weekly.map((day, i) => (
-                      <div key={i} className="flex flex-col items-center flex-1">
+                          key={i}
+                          className="flex flex-col items-center flex-1"
+                        >
+                          <div
+                            className="w-full bg-emerald-500 rounded-t-lg transition-all duration-500"
+                            style={{ height: `${hour.usage * 10}%` }}
+                          ></div>
+                          <span className="text-xs mt-2 text-gray-600">
+                            {hour.time}
+                          </span>
+                        </div>
+                      ))
+                    : mockEnergyData.weekly.map((day, i) => (
                         <div
-                          className="w-full bg-blue-500 rounded-t-lg transition-all duration-500"
-                          style={{ height: `${day.usage * 3}%` }}
-                        ></div>
-                        <span className="text-xs mt-2 text-gray-600">{day.day}</span>
-                      </div>
-                    ))
-                  }
+                          key={i}
+                          className="flex flex-col items-center flex-1"
+                        >
+                          <div
+                            className="w-full bg-blue-500 rounded-t-lg transition-all duration-500"
+                            style={{ height: `${day.usage * 3}%` }}
+                          ></div>
+                          <span className="text-xs mt-2 text-gray-600">
+                            {day.day}
+                          </span>
+                        </div>
+                      ))}
                 </div>
               </div>
             </div>
@@ -288,20 +318,34 @@ function Dashboard() {
                   Room-wise Usage
                 </h2>
                 <div className="space-y-3">
-                  {mockEnergyData.roomData.map((room, i) => (
-                    <div key={i} className="space-y-1">
-                      <div className="flex justify-between text-sm">
-                        <span className="text-gray-700">{room.name}</span>
-                        <span className="font-medium">{room.usage}%</span>
+                  {chartData &&
+                    chartData?.room_consumption?.rooms.map((room, i) => (
+                      <div key={i} className="space-y-1">
+                        <div className="flex justify-between text-sm">
+                          <span className="text-gray-700">{room}</span>
+                          <span className="font-medium">
+                            {parseFloat(
+                              (chartData &&
+                                chartData?.room_consumption?.usage[i] /
+                                  totalRoomCosumption) * 100
+                            ).toFixed(2)}
+                            %
+                          </span>
+                        </div>
+                        <div className="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
+                          <div
+                            className="h-full bg-teal-500"
+                            style={{
+                              width: `${parseFloat(
+                                (chartData &&
+                                  chartData?.room_consumption?.usage[i] /
+                                    totalRoomCosumption) * 100
+                              ).toFixed(2)}%`,
+                            }}
+                          ></div>
+                        </div>
                       </div>
-                      <div className="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
-                        <div
-                          className="h-full bg-teal-500"
-                          style={{ width: `${room.usage}%` }}
-                        ></div>
-                      </div>
-                    </div>
-                  ))}
+                    ))}
                 </div>
               </div>
 
@@ -312,27 +356,57 @@ function Dashboard() {
                   Device Consumption
                 </h2>
                 <div className="space-y-3">
-                  {mockEnergyData.deviceData.map((device, i) => (
-                    <div key={i} className="flex items-center justify-between">
-                      <div className="flex items-center">
-                        <div className={`w-2 h-2 rounded-full mr-2 ${device.status === 'high' ? 'bg-red-500' :
-                          device.status === 'normal' ? 'bg-yellow-500' : 'bg-green-500'
-                          }`}></div>
-                        <span className="text-gray-700">{device.name}</span>
-                      </div>
-                      <div className="flex items-center">
-                        <span className="text-sm font-medium mr-2">{device.usage}%</span>
-                        <div className="w-16 h-2 bg-gray-100 rounded-full overflow-hidden">
+                  {chartData?.appliance_power_cost?.appliances.map(
+                    (device, i) => (
+                      <div
+                        key={i}
+                        className="flex items-center justify-between"
+                      >
+                        <div className="flex items-center">
                           <div
-                            className={`h-full ${device.status === 'high' ? 'bg-red-500' :
-                              device.status === 'normal' ? 'bg-yellow-500' : 'bg-green-500'
-                              }`}
-                            style={{ width: `${device.usage}%` }}
+                            className={`w-2 h-2 rounded-full mr-2 ${
+                              device.status === "high"
+                                ? "bg-red-500"
+                                : device.status === "normal"
+                                ? "bg-yellow-500"
+                                : "bg-green-500"
+                            }`}
                           ></div>
+                          <span className="text-gray-700">{device}</span>
+                        </div>
+                        <div className="flex items-center">
+                          <span className="text-sm font-medium mr-2">
+                            {parseFloat(
+                              (chartData?.appliance_power_cost?.power_usage[i] /
+                                totalDeviceConsumption) *
+                                100
+                            ).toFixed(2)}
+                            %
+                          </span>
+                          <div className="w-16 h-2 bg-gray-100 rounded-full overflow-hidden">
+                            <div
+                              className={`h-full ${
+                                device.status === "high"
+                                  ? "bg-red-500"
+                                  : device.status === "normal"
+                                  ? "bg-yellow-500"
+                                  : "bg-green-500"
+                              }`}
+                              style={{
+                                width: `${parseFloat(
+                                  (chartData?.appliance_power_cost?.power_usage[
+                                    i
+                                  ] /
+                                    totalDeviceConsumption) *
+                                    100
+                                ).toFixed(2)}%`,
+                              }}
+                            ></div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  ))}
+                    )
+                  )}
                 </div>
               </div>
             </div>
@@ -358,8 +432,9 @@ function Dashboard() {
                   {energyTips.map((_, i) => (
                     <div
                       key={i}
-                      className={`w-2 h-2 rounded-full transition-colors ${i === tipIndex ? 'bg-emerald-500' : 'bg-gray-300'
-                        }`}
+                      className={`w-2 h-2 rounded-full transition-colors ${
+                        i === tipIndex ? "bg-emerald-500" : "bg-gray-300"
+                      }`}
                     ></div>
                   ))}
                 </div>
@@ -374,9 +449,14 @@ function Dashboard() {
               </h2>
               <div className="space-y-3">
                 {mockEnergyData.wastageAlerts.map((alert, i) => (
-                  <div key={i} className="border-l-4 border-yellow-500 bg-yellow-50 p-3 rounded-r-lg">
+                  <div
+                    key={i}
+                    className="border-l-4 border-yellow-500 bg-yellow-50 p-3 rounded-r-lg"
+                  >
                     <div className="flex justify-between">
-                      <div className="font-medium text-gray-800">{alert.device}</div>
+                      <div className="font-medium text-gray-800">
+                        {alert.device}
+                      </div>
                       <div className="text-xs text-gray-500 flex items-center">
                         <Clock size={12} className="mr-1" />
                         {alert.time}
@@ -411,11 +491,16 @@ function Dashboard() {
                 <div className="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
                   <div
                     className="h-full bg-purple-500"
-                    style={{ width: `${(mockEnergyData.gamification.points / 400) * 100}%` }}
+                    style={{
+                      width: `${
+                        (mockEnergyData.gamification.points / 400) * 100
+                      }%`,
+                    }}
                   ></div>
                 </div>
                 <div className="text-xs text-gray-500 mt-1">
-                  {mockEnergyData.gamification.pointsToNextLevel} points to next level
+                  {mockEnergyData.gamification.pointsToNextLevel} points to next
+                  level
                 </div>
               </div>
 
@@ -428,9 +513,7 @@ function Dashboard() {
                   {mockEnergyData.gamification.dailyChallenge}
                 </p>
                 <div className="mt-2 flex justify-between items-center">
-                  <div className="text-xs text-gray-600">
-                    Earn: 15 points
-                  </div>
+                  <div className="text-xs text-gray-600">Earn: 15 points</div>
                   <button className="text-xs bg-blue-600 text-white px-2 py-1 rounded hover:bg-blue-700">
                     Complete
                   </button>
@@ -443,7 +526,10 @@ function Dashboard() {
                     <Droplet size={14} className="text-green-600" />
                   </div>
                   <div className="text-sm text-gray-700">
-                    <span className="font-medium">{mockEnergyData.gamification.streakDays}-day</span> streak
+                    <span className="font-medium">
+                      {mockEnergyData.gamification.streakDays}-day
+                    </span>{" "}
+                    streak
                   </div>
                 </div>
 
@@ -452,7 +538,10 @@ function Dashboard() {
                     <Thermometer size={14} className="text-purple-600" />
                   </div>
                   <div className="text-sm text-gray-700">
-                    <span className="font-medium">{mockEnergyData.gamification.badges.length}</span> badges
+                    <span className="font-medium">
+                      {mockEnergyData.gamification.badges.length}
+                    </span>{" "}
+                    badges
                   </div>
                 </div>
               </div>
@@ -478,7 +567,12 @@ function Dashboard() {
             <span>Data refreshed: Today, 2:45 PM</span>
           </div>
           <div>
-            <a href="/detailed-report" className="text-emerald-600 hover:underline">View detailed reports</a>
+            <a
+              href="/detailed-report"
+              className="text-emerald-600 hover:underline"
+            >
+              View detailed reports
+            </a>
           </div>
         </div>
       </div>
