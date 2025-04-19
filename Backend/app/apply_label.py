@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 from sqlalchemy.orm import Session
-from app.db import SessionLocal
-from app.models import EnergyUsage, ClusterInsights
+from db import SessionLocal
+from models import EnergyUsage, ClusterInsights
 from datetime import datetime
 import pandas as pd
 import numpy as np
@@ -90,6 +90,7 @@ def apply_clustering():
         }).reset_index()
 
         for _, row in grouped.iterrows():
+            pattern = get_usage_pattern(row["power"], row["duration"])
             session.add(ClusterInsights(
                 appliance=row["appliance"],
                 cluster_label=int(row["cluster"]),
@@ -97,7 +98,7 @@ def apply_clustering():
                 avg_power_usage=round(row["power"], 2),
                 avg_temperature=round(row["temperature"], 2),
                 avg_hour=round(row["hour"], 2),
-                usage_pattern="Pending"
+                usage_pattern=pattern
             ))
 
         session.commit()
@@ -107,3 +108,14 @@ def apply_clustering():
         return {"error": str(e)}
     finally:
         session.close()
+
+
+
+def get_usage_pattern(avg_power, avg_duration):
+    if avg_power > 8 or avg_duration > 4:
+        return "Wasteful Usage"
+    elif avg_power < 3 and avg_duration <= 2:
+        return "Optimal Usage"
+    else:
+        return "Normal Usage"
+

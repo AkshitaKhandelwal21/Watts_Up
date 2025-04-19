@@ -1,9 +1,9 @@
 from fastapi import APIRouter
 from sqlalchemy.orm import Session
-from app.db import SessionLocal
-from app.models import EnergyUsage
+from db import SessionLocal
+from models import EnergyUsage
 import pandas as pd
-from collections import defaultdict
+
 
 dashboard = APIRouter()
 
@@ -13,6 +13,7 @@ def get_df():
     df = pd.DataFrame([d.__dict__ for d in data])
     df.drop("_sa_instance_state", axis=1, inplace=True)
     return df
+
 
 @dashboard.get("/charts")
 def get_chart_data():
@@ -44,12 +45,13 @@ def get_chart_data():
     }
 
     # 4. Appliances by Label
-    label_group = df.groupby(["appliance", "label"]).size().unstack(fill_value=0)
-    charts["appliance_label"] = {
-        "appliances": label_group.index.tolist(),
-        "labels": label_group.columns.tolist(),
-        "counts": label_group.to_dict(orient="list")
-    }
+    if "label" in df.columns:
+        label_group = df.groupby(["appliance", "label"]).size().unstack(fill_value=0)
+        charts["appliance_label"] = {
+            "appliances": label_group.index.tolist(),
+            "labels": label_group.columns.tolist(),
+            "counts": label_group.to_dict(orient="list")
+        }
 
     # 5. Monthly Heatmap (using day instead for now)
     df["day"] = pd.to_datetime(df["timestamp"]).dt.day
@@ -63,32 +65,24 @@ def get_chart_data():
     # 6. Daily Total Usage & Cost
     daily = df.groupby(df["timestamp"].dt.date).agg({"power_usage_kWh": "sum", "estimated_cost": "sum"}).reset_index()
     charts["daily_summary"] = {
-    "dates": daily["timestamp"].astype(str).tolist(),
-    "daily_usage": daily["power_usage_kWh"].tolist(),
-    "daily_cost": daily["estimated_cost"].tolist()
-}
-    
-    #7 Top 3 Energy-Consuming Appliances
+        "dates": daily["timestamp"].astype(str).tolist(),
+        "daily_usage": daily["power_usage_kWh"].tolist(),
+        "daily_cost": daily["estimated_cost"].tolist()
+    }
+
+    # 7. Top 3 Energy-Consuming Appliances
     top_appliances = appliance_group.sort_values("power_usage_kWh", ascending=False).head(3)
     charts["top_appliances"] = {
-    "appliances": top_appliances["appliance"].tolist(),
-    "usage": top_appliances["power_usage_kWh"].tolist()
-}
+        "appliances": top_appliances["appliance"].tolist(),
+        "usage": top_appliances["power_usage_kWh"].tolist()
+    }
 
-    #8 Cost Efficiency per Room
+    # 8. Cost Efficiency per Room
     room_efficiency = df.groupby("room").agg({"estimated_cost": "sum", "power_usage_kWh": "sum"}).reset_index()
     room_efficiency["cost_per_kWh"] = room_efficiency["estimated_cost"] / room_efficiency["power_usage_kWh"]
     charts["room_efficiency"] = {
-    "rooms": room_efficiency["room"].tolist(),
-    "cost_per_kWh": room_efficiency["cost_per_kWh"].round(2).tolist()
-}
-    # KPI: Average Daily Usage
-    avg_daily = df.groupby(df["timestamp"].dt.date)["power_usage_kWh"].sum()
-    charts["avg_daily_usage"] = round(avg_daily.mean(), 2)
-
-    # KPI: Number of Optimal Appliance Entries
-    optimal_count = df[df["label"] == "Optimal"].shape[0]
-    charts["optimal_appliance_count"] = optimal_count
-
+        "rooms": room_efficiency["room"].tolist(),
+        "cost_per_kWh": room_efficiency["cost_per_kWh"].round(2).tolist()
+    }
 
     return charts
