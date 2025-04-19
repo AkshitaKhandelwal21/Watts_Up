@@ -138,18 +138,18 @@ function Dashboard() {
               <span>Dashboard</span>
             </button>
             <button
-              onClick={() => navigateTo("/profile")}
-              className="flex items-center px-3 py-2 rounded-lg bg-purple-100 text-purple-700 hover:bg-purple-200 transition-colors"
-            >
-              <User size={18} className="mr-1" />
-              <span>Profile</span>
-            </button>
-            <button
               onClick={() => navigateTo("/leaderboard")}
               className="flex items-center px-3 py-2 rounded-lg bg-emerald-100 text-emerald-700 hover:bg-emerald-200 transition-colors"
             >
               <Award size={18} className="mr-1" />
               <span>Leaderboard</span>
+            </button>
+            <button
+              onClick={() => navigateTo("/profile")}
+              className="flex items-center px-3 py-2 rounded-lg bg-purple-100 text-purple-700 hover:bg-purple-200 transition-colors"
+            >
+              <User size={18} className="mr-1" />
+              <span>Profile</span>
             </button>
             <button
               onClick={handleLogout}
@@ -173,8 +173,8 @@ function Dashboard() {
             <button
               onClick={() => setTimeRange('daily')}
               className={`px-4 py-2 rounded-lg transition-colors ${timeRange === 'daily'
-                  ? 'bg-emerald-500 text-white'
-                  : 'bg-white text-gray-700 hover:bg-gray-100'
+                ? 'bg-emerald-500 text-white'
+                : 'bg-white text-gray-700 hover:bg-gray-100'
                 }`}
             >
               Today
@@ -182,8 +182,8 @@ function Dashboard() {
             <button
               onClick={() => setTimeRange('weekly')}
               className={`px-4 py-2 rounded-lg transition-colors ${timeRange === 'weekly'
-                  ? 'bg-emerald-500 text-white'
-                  : 'bg-white text-gray-700 hover:bg-gray-100'
+                ? 'bg-emerald-500 text-white'
+                : 'bg-white text-gray-700 hover:bg-gray-100'
                 }`}
             >
               This Week
@@ -316,7 +316,7 @@ function Dashboard() {
                     <div key={i} className="flex items-center justify-between">
                       <div className="flex items-center">
                         <div className={`w-2 h-2 rounded-full mr-2 ${device.status === 'high' ? 'bg-red-500' :
-                            device.status === 'normal' ? 'bg-yellow-500' : 'bg-green-500'
+                          device.status === 'normal' ? 'bg-yellow-500' : 'bg-green-500'
                           }`}></div>
                         <span className="text-gray-700">{device.name}</span>
                       </div>
@@ -325,7 +325,7 @@ function Dashboard() {
                         <div className="w-16 h-2 bg-gray-100 rounded-full overflow-hidden">
                           <div
                             className={`h-full ${device.status === 'high' ? 'bg-red-500' :
-                                device.status === 'normal' ? 'bg-yellow-500' : 'bg-green-500'
+                              device.status === 'normal' ? 'bg-yellow-500' : 'bg-green-500'
                               }`}
                             style={{ width: `${device.usage}%` }}
                           ></div>

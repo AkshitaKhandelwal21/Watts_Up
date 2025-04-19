@@ -169,18 +169,18 @@ function Leaderboard() {
               <span>Dashboard</span>
             </button>
             <button
-              onClick={() => navigateTo("/profile")}
-              className="flex items-center px-3 py-2 rounded-lg bg-purple-100 text-purple-700 hover:bg-purple-200 transition-colors"
-            >
-              <User size={18} className="mr-1" />
-              <span>Profile</span>
-            </button>
-            <button
               onClick={() => navigateTo("/leaderboard")}
               className="flex items-center px-3 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors"
             >
               <Award size={18} className="mr-1" />
               <span>Leaderboard</span>
+            </button>
+            <button
+              onClick={() => navigateTo("/profile")}
+              className="flex items-center px-3 py-2 rounded-lg bg-purple-100 text-purple-700 hover:bg-purple-200 transition-colors"
+            >
+              <User size={18} className="mr-1" />
+              <span>Profile</span>
             </button>
             <button
               onClick={handleLogout}

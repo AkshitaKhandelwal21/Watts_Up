@@ -1,11 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { Zap, Star, Award, ThumbsUp, Calendar, Lightbulb, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Zap, Star, Award, ThumbsUp, Calendar, Lightbulb, ArrowRight, ChevronLeft, ChevronRight, ArrowLeftCircle } from 'lucide-react';
 
 function Tips() {
   const [activeTab, setActiveTab] = useState('daily');
   const [currentTipIndex, setCurrentTipIndex] = useState(0);
   const [showAnimation, setShowAnimation] = useState(false);
   const [savedTips, setSavedTips] = useState([]);
+
+  // Function to handle navigation
+  const navigateTo = (path) => {
+    window.location.href = path;
+  };
 
   // Sample tips data
   const dailyTips = [
@@ -115,6 +120,15 @@ function Tips() {
       </div>
 
       <div className="max-w-4xl mx-auto">
+        {/* Back Navigation Button */}
+        <button 
+          onClick={() => navigateTo("/leaderboard")}
+          className="mb-5 flex items-center text-gray-700 hover:text-emerald-600 transition-colors"
+        >
+          <ArrowLeftCircle size={20} className="mr-2" />
+          <span>Back to Leaderboard</span>
+        </button>
+        
         {/* Header */}
         <div className="flex items-center justify-between mb-6">
           <div className="flex items-center">
@@ -284,6 +298,17 @@ function Tips() {
               <p className="text-xs text-gray-600">Reduction</p>
             </div>
           </div>
+        </div>
+        
+        {/* Bottom navigation - Back to leaderboard */}
+        <div className="mt-6 text-center">
+          <button 
+            onClick={() => navigateTo("/leaderboard")}
+            className="inline-flex items-center px-4 py-2 bg-purple-100 text-purple-700 rounded-lg hover:bg-purple-200 transition-colors"
+          >
+            <Award size={18} className="mr-2" />
+            <span>Return to Leaderboard</span>
+          </button>
         </div>
       </div>
     </div>

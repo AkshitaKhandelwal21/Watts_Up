@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Home, Users, Zap, Settings, Edit, Save, X, Plus, Award, User, LogOut } from "lucide-react";
+import { Home, Users, Zap, Settings, Edit, Save, X, Plus, Award, User, LogOut, Upload, Trash2, Check } from "lucide-react";
 
 function Profile() {
   const [isEditing, setIsEditing] = useState(false);
@@ -7,12 +7,23 @@ function Profile() {
     name: "Alex Johnson",
     location: "Mumbai",
     householdSize: 4,
-    appliances: ["AC", "Geyser", "Fridge", "Lights", "TV", "Washing Machine"],
+    rooms: {
+      "Kitchen": ["Fridge", "Microwave", "Electric Kettle"],
+      "Living Room": ["TV", "Lights", "AC"],
+      "Bedroom": ["AC", "Lights", "Ceiling Fan"],
+      "Bathroom": ["Geyser", "Exhaust Fan"]
+    },
     energyGoal: "Save 20% this month"
   });
 
   const [tempProfile, setTempProfile] = useState({ ...profile });
   const [newAppliance, setNewAppliance] = useState("");
+  const [newRoom, setNewRoom] = useState("");
+  const [selectedRoom, setSelectedRoom] = useState(Object.keys(profile.rooms)[0]);
+  const [csvFile, setCsvFile] = useState(null);
+  const [csvUploaded, setCsvUploaded] = useState(false);
+  const [energyAnalysis, setEnergyAnalysis] = useState(null);
+  const [addingRoom, setAddingRoom] = useState(false);
 
   // Function to handle navigation
   const navigateTo = (path) => {
@@ -39,22 +50,88 @@ function Profile() {
   };
 
   const handleApplianceAdd = () => {
-    if (newAppliance.trim()) {
+    if (newAppliance.trim() && selectedRoom) {
+      const updatedRooms = { ...tempProfile.rooms };
+      if (!updatedRooms[selectedRoom]) {
+        updatedRooms[selectedRoom] = [];
+      }
+      updatedRooms[selectedRoom] = [...updatedRooms[selectedRoom], newAppliance.trim()];
+
       setTempProfile({
         ...tempProfile,
-        appliances: [...tempProfile.appliances, newAppliance.trim()]
+        rooms: updatedRooms
       });
       setNewAppliance("");
     }
   };
 
-  const handleApplianceRemove = (index) => {
-    const updatedAppliances = [...tempProfile.appliances];
-    updatedAppliances.splice(index, 1);
+  const handleApplianceRemove = (room, index) => {
+    const updatedRooms = { ...tempProfile.rooms };
+    updatedRooms[room].splice(index, 1);
+
+    // Remove room if it has no appliances
+    if (updatedRooms[room].length === 0) {
+      delete updatedRooms[room];
+    }
+
     setTempProfile({
       ...tempProfile,
-      appliances: updatedAppliances
+      rooms: updatedRooms
     });
+  };
+
+  const handleAddRoom = () => {
+    if (newRoom.trim() && !tempProfile.rooms[newRoom.trim()]) {
+      const updatedRooms = { ...tempProfile.rooms };
+      updatedRooms[newRoom.trim()] = [];
+
+      setTempProfile({
+        ...tempProfile,
+        rooms: updatedRooms
+      });
+
+      setSelectedRoom(newRoom.trim());
+      setNewRoom("");
+      setAddingRoom(false);
+    }
+  };
+
+  const handleDeleteRoom = (roomName) => {
+    const updatedRooms = { ...tempProfile.rooms };
+    delete updatedRooms[roomName];
+
+    setTempProfile({
+      ...tempProfile,
+      rooms: updatedRooms
+    });
+
+    // Select another room if available
+    if (Object.keys(updatedRooms).length > 0) {
+      setSelectedRoom(Object.keys(updatedRooms)[0]);
+    } else {
+      setSelectedRoom("");
+    }
+  };
+
+
+  const handleFileUpload = () => {
+    if (!csvFile) return;
+
+    // In a real application, you would send this file to your server
+    // For demo purposes, we'll simulate a successful upload and analysis
+    setTimeout(() => {
+      setCsvUploaded(true);
+      setEnergyAnalysis({
+        totalUsage: "347 kWh",
+        highestConsumer: "AC (Bedroom)",
+        potentialSavings: "82 kWh (24%)",
+        recommendations: [
+          "Reduce AC usage in bedroom by 2 hours daily",
+          "Consider upgrading your refrigerator to an energy-efficient model",
+          "Turn off lights in unoccupied rooms"
+        ]
+      });
+    }, 1000);
   };
 
   return (
@@ -75,18 +152,18 @@ function Profile() {
               <span>Dashboard</span>
             </button>
             <button
-              onClick={() => navigateTo("/profile")}
-              className="flex items-center px-3 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors"
-            >
-              <User size={18} className="mr-1" />
-              <span>Profile</span>
-            </button>
-            <button
               onClick={() => navigateTo("/leaderboard")}
               className="flex items-center px-3 py-2 rounded-lg bg-purple-100 text-purple-700 hover:bg-purple-200 transition-colors"
             >
               <Award size={18} className="mr-1" />
               <span>Leaderboard</span>
+            </button>
+            <button
+              onClick={() => navigateTo("/profile")}
+              className="flex items-center px-3 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors"
+            >
+              <User size={18} className="mr-1" />
+              <span>Profile</span>
             </button>
             <button
               onClick={handleLogout}
@@ -202,44 +279,129 @@ function Profile() {
             </div>
           </div>
 
+          <div className="flex items-center justify-center p-6 md:p-8 border-b border-gray-100">
+            <button
+              onClick={() => {
+                // API call will go here
+                // For example: fetchEnergyData() or addEnergyData()
+              }}
+              className="px-4 py-2 rounded-lg flex items-center bg-blue-500 text-white hover:bg-blue-600 transition-colors"
+            >
+              <Zap size={18} className="mr-2" />
+              Add Energy Data
+            </button>
+          </div>
+
           {/* Appliances section */}
           <div className="p-6 md:p-8">
             <h3 className="text-lg font-semibold text-gray-800 mb-4 flex items-center">
               <Zap size={18} className="text-emerald-500 mr-2" />
-              Registered Appliances
+              Appliances by Room
             </h3>
 
             {isEditing ? (
               <div className="space-y-4">
-                <div className="flex gap-2 mb-4">
-                  <input
-                    type="text"
-                    value={newAppliance}
-                    onChange={(e) => setNewAppliance(e.target.value)}
-                    placeholder="Add new appliance"
-                    className="flex-1 p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
-                  />
-                  <button
-                    onClick={handleApplianceAdd}
-                    className="p-2 bg-emerald-500 text-white rounded-lg hover:bg-emerald-600 transition-colors"
-                  >
-                    <Plus size={20} />
-                  </button>
-                </div>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {Object.keys(tempProfile.rooms).map((room) => (
+                    <button
+                      key={room}
+                      onClick={() => setSelectedRoom(room)}
+                      className={`px-4 py-2 rounded-lg text-sm font-medium flex items-center
+                        ${selectedRoom === room
+                          ? 'bg-emerald-500 text-white'
+                          : 'bg-gray-100 text-gray-700 hover:bg-gray-200'} 
+                        transition-colors`}
+                    >
+                      <span>{room}</span>
+                      {selectedRoom === room && isEditing && (
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            handleDeleteRoom(room);
+                          }}
+                          className="ml-2 text-white hover:text-red-200"
+                        >
+                          <X size={14} />
+                        </button>
+                      )}
+                    </button>
+                  ))}
 
-                <div className="flex flex-wrap gap-2">
-                  {tempProfile.appliances.map((appliance, index) => (
-                    <div key={index} className="flex items-center bg-gray-100 rounded-full px-3 py-1">
-                      <span className="text-gray-800">{appliance}</span>
+                  {!addingRoom ? (
+                    <button
+                      onClick={() => setAddingRoom(true)}
+                      className="px-4 py-2 rounded-lg text-sm font-medium bg-blue-100 text-blue-700 hover:bg-blue-200 transition-colors flex items-center"
+                    >
+                      <Plus size={16} className="mr-1" />
+                      Add Room
+                    </button>
+                  ) : (
+                    <div className="flex">
+                      <input
+                        type="text"
+                        value={newRoom}
+                        onChange={(e) => setNewRoom(e.target.value)}
+                        placeholder="Room name"
+                        className="p-2 border border-gray-300 rounded-l-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      />
                       <button
-                        onClick={() => handleApplianceRemove(index)}
-                        className="ml-2 text-gray-500 hover:text-red-500"
+                        onClick={handleAddRoom}
+                        className="p-2 bg-blue-500 text-white rounded-r-lg hover:bg-blue-600 transition-colors"
+                      >
+                        <Check size={16} />
+                      </button>
+                      <button
+                        onClick={() => {
+                          setAddingRoom(false);
+                          setNewRoom("");
+                        }}
+                        className="p-2 ml-1 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors"
                       >
                         <X size={16} />
                       </button>
                     </div>
-                  ))}
+                  )}
                 </div>
+
+                {selectedRoom && (
+                  <>
+                    <div className="flex gap-2 mb-4">
+                      <input
+                        type="text"
+                        value={newAppliance}
+                        onChange={(e) => setNewAppliance(e.target.value)}
+                        placeholder={`Add appliance to ${selectedRoom}`}
+                        className="flex-1 p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                      />
+                      <button
+                        onClick={handleApplianceAdd}
+                        className="p-2 bg-emerald-500 text-white rounded-lg hover:bg-emerald-600 transition-colors"
+                      >
+                        <Plus size={20} />
+                      </button>
+                    </div>
+
+                    <div className="p-4 bg-gray-50 rounded-lg">
+                      <h4 className="font-medium text-gray-700 mb-2">{selectedRoom} Appliances</h4>
+                      <div className="flex flex-wrap gap-2">
+                        {tempProfile.rooms[selectedRoom]?.map((appliance, index) => (
+                          <div key={index} className="flex items-center bg-white border border-gray-200 rounded-full px-3 py-1">
+                            <span className="text-gray-800">{appliance}</span>
+                            <button
+                              onClick={() => handleApplianceRemove(selectedRoom, index)}
+                              className="ml-2 text-gray-500 hover:text-red-500"
+                            >
+                              <X size={16} />
+                            </button>
+                          </div>
+                        ))}
+                        {tempProfile.rooms[selectedRoom]?.length === 0 && (
+                          <p className="text-gray-500 text-sm">No appliances in this room yet.</p>
+                        )}
+                      </div>
+                    </div>
+                  </>
+                )}
 
                 <div className="flex gap-2 mt-6">
                   <button
@@ -258,13 +420,23 @@ function Profile() {
                 </div>
               </div>
             ) : (
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-                {profile.appliances.map((appliance, index) => (
-                  <div
-                    key={index}
-                    className="flex items-center justify-center p-4 bg-gray-50 border border-gray-100 rounded-xl hover:shadow-md transition-shadow"
-                  >
-                    <span className="font-medium text-gray-700">{appliance}</span>
+              <div className="space-y-6">
+                {Object.entries(profile.rooms).map(([room, appliances]) => (
+                  <div key={room} className="bg-gray-50 rounded-xl p-4">
+                    <h4 className="font-medium text-gray-800 mb-3 flex items-center">
+                      <Home size={16} className="text-emerald-600 mr-2" />
+                      {room}
+                    </h4>
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                      {appliances.map((appliance, index) => (
+                        <div
+                          key={index}
+                          className="flex items-center justify-center p-3 bg-white border border-gray-100 rounded-lg hover:shadow-md transition-shadow"
+                        >
+                          <span className="font-medium text-gray-700">{appliance}</span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 ))}
               </div>
@@ -293,11 +465,11 @@ function Profile() {
           </button>
 
           <div className="flex items-center gap-4">
-            <a href="#" className="flex items-center text-gray-600 hover:text-emerald-600">
+            <a href="/advance-energy-settings" className="flex items-center text-gray-600 hover:text-emerald-600">
               <Settings size={18} className="mr-1" />
               <span>Advanced Energy Settings</span>
             </a>
-            
+
             <button
               onClick={handleLogout}
               className="flex items-center text-red-600 hover:text-red-800"
