@@ -126,13 +126,14 @@ function Dashboard({ chartData = {} }) {
     ((previousUsage - currentUsage) / previousUsage) *
     100
   ).toFixed(1);
-  const totalRoomCosumption = chartData.room_consumption.usage.reduce(
+
+  const totalRoomCosumption = chartData?.room_consumption?.usage.reduce(
     (accumulator, currentValue) => accumulator + currentValue,
     0
   );
 
   const totalDeviceConsumption =
-    chartData.appliance_power_cost.power_usage.reduce(
+    chartData?.appliance_power_cost?.power_usage.reduce(
       (accumulator, currentValue) => accumulator + currentValue,
       0
     );
@@ -317,33 +318,34 @@ function Dashboard({ chartData = {} }) {
                   Room-wise Usage
                 </h2>
                 <div className="space-y-3">
-                  {chartData.room_consumption.rooms.map((room, i) => (
-                    <div key={i} className="space-y-1">
-                      <div className="flex justify-between text-sm">
-                        <span className="text-gray-700">{room}</span>
-                        <span className="font-medium">
-                          {parseFloat(
-                            (chartData.room_consumption.usage[i] /
-                              totalRoomCosumption) *
-                              100
-                          ).toFixed(2)}
-                          %
-                        </span>
+                  {chartData &&
+                    chartData?.room_consumption?.rooms.map((room, i) => (
+                      <div key={i} className="space-y-1">
+                        <div className="flex justify-between text-sm">
+                          <span className="text-gray-700">{room}</span>
+                          <span className="font-medium">
+                            {parseFloat(
+                              (chartData &&
+                                chartData?.room_consumption?.usage[i] /
+                                  totalRoomCosumption) * 100
+                            ).toFixed(2)}
+                            %
+                          </span>
+                        </div>
+                        <div className="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
+                          <div
+                            className="h-full bg-teal-500"
+                            style={{
+                              width: `${parseFloat(
+                                (chartData &&
+                                  chartData?.room_consumption?.usage[i] /
+                                    totalRoomCosumption) * 100
+                              ).toFixed(2)}%`,
+                            }}
+                          ></div>
+                        </div>
                       </div>
-                      <div className="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
-                        <div
-                          className="h-full bg-teal-500"
-                          style={{
-                            width: `${parseFloat(
-                              (chartData.room_consumption.usage[i] /
-                                totalRoomCosumption) *
-                                100
-                            ).toFixed(2)}%`,
-                          }}
-                        ></div>
-                      </div>
-                    </div>
-                  ))}
+                    ))}
                 </div>
               </div>
 
@@ -354,7 +356,7 @@ function Dashboard({ chartData = {} }) {
                   Device Consumption
                 </h2>
                 <div className="space-y-3">
-                  {chartData.appliance_power_cost.appliances.map(
+                  {chartData?.appliance_power_cost?.appliances.map(
                     (device, i) => (
                       <div
                         key={i}
@@ -375,7 +377,7 @@ function Dashboard({ chartData = {} }) {
                         <div className="flex items-center">
                           <span className="text-sm font-medium mr-2">
                             {parseFloat(
-                              (chartData.appliance_power_cost.power_usage[i] /
+                              (chartData?.appliance_power_cost?.power_usage[i] /
                                 totalDeviceConsumption) *
                                 100
                             ).toFixed(2)}
@@ -392,7 +394,7 @@ function Dashboard({ chartData = {} }) {
                               }`}
                               style={{
                                 width: `${parseFloat(
-                                  (chartData.appliance_power_cost.power_usage[
+                                  (chartData?.appliance_power_cost?.power_usage[
                                     i
                                   ] /
                                     totalDeviceConsumption) *

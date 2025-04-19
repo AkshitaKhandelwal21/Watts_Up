@@ -8,6 +8,7 @@ from kpi import kpi
 from apply_label import label_router
 from models import Base
 from db import engine
+from middleware import middleware_router 
 # from llm_model.llm_routes import LLMrouter
 import os
 from fastapi.middleware.cors import CORSMiddleware
@@ -38,9 +39,11 @@ app.add_middleware(
 
 Base.metadata.create_all(bind=engine)
 
-app.include_router(router)
-app.include_router(data)
-app.include_router(label_router)
+# app.include_router(router)
+# app.include_router(data)
+# app.include_router(label_router)
 app.include_router(dashboard)
-app.include_router(kpi)
+# app.include_router(kpi)
+app.include_router(middleware_router)
+
 # app.include_router(LLMrouter)

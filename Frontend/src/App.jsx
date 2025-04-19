@@ -9,8 +9,8 @@ import ForgotPassword from "./components/ForgotPassword";
 import React, { useEffect, useState } from "react";
 import SignUp from "./components/Signup";
 import DetailedReports from "./components/DetailedReport";
+import AdvanceEnergySettings from "./components/AdvanceEnergySettings";
 import axios from "axios";
-
 import AdvanceEnergySettings from './components/AdvanceEnergySettings'
 function App() {
   const [chartData, setChartData] = useState(null);

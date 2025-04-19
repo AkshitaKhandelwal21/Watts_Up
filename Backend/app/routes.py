@@ -15,7 +15,6 @@ end_date = start_date + timedelta(days=100)
 appliances = ["AC", "Heater", "TV", "Microwave", "Refrigerator", "Fan", "Light", "Washing Machine", "Dishwasher", "Oven"]
 rooms = ["Living Room", "Bedroom", "Kitchen", "Bathroom", "Laundry Room", "Dining Room"]
 
-# Power (kW) per hour range
 power_ranges = {
     "AC": (2.5, 3.5),
     "Heater": (1.5, 2.5),
