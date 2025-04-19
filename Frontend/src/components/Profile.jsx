@@ -20,9 +20,6 @@ function Profile() {
   const [newAppliance, setNewAppliance] = useState("");
   const [newRoom, setNewRoom] = useState("");
   const [selectedRoom, setSelectedRoom] = useState(Object.keys(profile.rooms)[0]);
-  const [csvFile, setCsvFile] = useState(null);
-  const [csvUploaded, setCsvUploaded] = useState(false);
-  const [energyAnalysis, setEnergyAnalysis] = useState(null);
   const [addingRoom, setAddingRoom] = useState(false);
 
   // Function to handle navigation
@@ -111,27 +108,6 @@ function Profile() {
     } else {
       setSelectedRoom("");
     }
-  };
-
-
-  const handleFileUpload = () => {
-    if (!csvFile) return;
-
-    // In a real application, you would send this file to your server
-    // For demo purposes, we'll simulate a successful upload and analysis
-    setTimeout(() => {
-      setCsvUploaded(true);
-      setEnergyAnalysis({
-        totalUsage: "347 kWh",
-        highestConsumer: "AC (Bedroom)",
-        potentialSavings: "82 kWh (24%)",
-        recommendations: [
-          "Reduce AC usage in bedroom by 2 hours daily",
-          "Consider upgrading your refrigerator to an energy-efficient model",
-          "Turn off lights in unoccupied rooms"
-        ]
-      });
-    }, 1000);
   };
 
   return (
@@ -275,11 +251,7 @@ function Profile() {
                     </div>
                   </div>
                 )}
-              </div>
-            </div>
-          </div>
-
-          <div className="flex items-center justify-center p-6 md:p-8 border-b border-gray-100">
+              <div className="flex mt-3">
             <button
               onClick={() => {
                 // API call will go here
@@ -290,6 +262,9 @@ function Profile() {
               <Zap size={18} className="mr-2" />
               Add Energy Data
             </button>
+          </div>
+              </div>
+            </div>
           </div>
 
           {/* Appliances section */}
