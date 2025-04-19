@@ -85,4 +85,27 @@ def get_chart_data():
         "cost_per_kWh": room_efficiency["cost_per_kWh"].round(2).tolist()
     }
 
+    # 9. KPI: Average Daily Usage
+    avg_daily = df.groupby(df["timestamp"].dt.date)["power_usage_kWh"].sum()
+    charts["avg_daily_usage"] = float(round(avg_daily.mean(), 2))
+
+    # 10. KPI: Number of Optimal Appliance Entries
+    if "label" in df.columns:
+        optimal_count = df[df["label"] == "Optimal"].shape[0]
+        charts["optimal_appliance_count"] = float(optimal_count)
+
+        # 11. KPI: % Optimal Usage
+        charts["percent_optimal"] = float(round((optimal_count / df.shape[0]) * 100, 2))
+
+        # 12. KPI: Most Wasteful Appliance
+        wasteful_appliance = df[df["label"] == "Wasteful"]["appliance"].value_counts().idxmax()
+        charts["most_wasteful_appliance"] = str(wasteful_appliance)
+
+        # 13. KPI: Most Wasteful Hour
+        wasteful_hour = df[df["label"] == "Wasteful"]["hour"].value_counts().idxmax()
+        charts["most_wasteful_hour"] = str(wasteful_hour)
+        # 14. KPI: Room with Most Wastage
+        wasteful_room = df[df["label"] == "Wasteful"]["room"].value_counts().idxmax()
+        charts["most_wasteful_room"] = str(wasteful_room)
+
     return charts
