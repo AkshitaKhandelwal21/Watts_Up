@@ -1,18 +1,21 @@
 import React, { useState } from "react";
-import { 
-  Zap, 
-  AlertTriangle, 
-  Home, 
-  BarChart3, 
-  Calendar, 
-  Info, 
-  Lightbulb, 
-  Trophy, 
-  ArrowUp, 
-  ArrowDown, 
-  Droplet, 
+import {
+  Zap,
+  AlertTriangle,
+  Home,
+  BarChart3,
+  Calendar,
+  Info,
+  Lightbulb,
+  Trophy,
+  ArrowUp,
+  ArrowDown,
+  Droplet,
   Thermometer,
-  Clock
+  Clock,
+  User,
+  Award,
+  LogOut
 } from "lucide-react";
 
 // Mock data for charts
@@ -51,23 +54,23 @@ const mockEnergyData = {
     { day: 'Sun', usage: 18.3 },
   ],
   wastageAlerts: [
-    { 
-      device: 'AC', 
-      issue: 'Running for extended periods', 
+    {
+      device: 'AC',
+      issue: 'Running for extended periods',
       wastage: '2.4 kWh',
       recommendation: 'Try setting a timer to turn off after 3 hours',
       time: '3:30 PM'
     },
-    { 
-      device: 'Geyser', 
-      issue: 'High temperature setting', 
+    {
+      device: 'Geyser',
+      issue: 'High temperature setting',
       wastage: '1.2 kWh',
       recommendation: 'Reduce temperature by 5°C to save energy',
       time: '7:15 AM'
     },
-    { 
-      device: 'Living Room Lights', 
-      issue: 'Left on when room is empty', 
+    {
+      device: 'Living Room Lights',
+      issue: 'Left on when room is empty',
       wastage: '0.5 kWh',
       recommendation: 'Consider motion sensors for automatic control',
       time: '9:45 PM'
@@ -94,6 +97,16 @@ function Dashboard() {
     "We noticed your fridge consumes more at night. Avoid frequent opening during peak hours (6-10 PM) to optimize energy use."
   ];
 
+  // Function to handle navigation
+  const navigateTo = (path) => {
+    window.location.href = path;
+  };
+
+  const handleLogout = () => {
+    // You could add any logout logic here (clear tokens, etc.)
+    navigateTo('/');
+  };
+
   // Cycle through tips automatically
   React.useEffect(() => {
     const interval = setInterval(() => {
@@ -110,6 +123,43 @@ function Dashboard() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 to-blue-50 p-4 md:p-6">
       <div className="max-w-7xl mx-auto">
+        {/* Navigation Bar */}
+        <div className="bg-white shadow rounded-xl p-3 mb-6 flex justify-between items-center">
+          <div className="flex items-center">
+            <Zap size={24} className="text-emerald-500 mr-2" />
+            <span className="font-bold text-gray-800">EnergySmartHome</span>
+          </div>
+          <div className="flex space-x-2">
+            <button
+              onClick={() => navigateTo("/dashboard")}
+              className="flex items-center px-3 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors"
+            >
+              <Home size={18} className="mr-1" />
+              <span>Dashboard</span>
+            </button>
+            <button
+              onClick={() => navigateTo("/profile")}
+              className="flex items-center px-3 py-2 rounded-lg bg-purple-100 text-purple-700 hover:bg-purple-200 transition-colors"
+            >
+              <User size={18} className="mr-1" />
+              <span>Profile</span>
+            </button>
+            <button
+              onClick={() => navigateTo("/leaderboard")}
+              className="flex items-center px-3 py-2 rounded-lg bg-emerald-100 text-emerald-700 hover:bg-emerald-200 transition-colors"
+            >
+              <Award size={18} className="mr-1" />
+              <span>Leaderboard</span>
+            </button>
+            <button
+              onClick={handleLogout}
+              className="flex items-center px-3 py-2 rounded-lg bg-red-100 text-red-700 hover:bg-red-200 transition-colors"
+            >
+              <LogOut size={18} className="mr-1" />
+              <span>Logout</span>
+            </button>
+          </div>
+        </div>
         {/* Dashboard Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
           <div>
@@ -118,31 +168,29 @@ function Dashboard() {
             </h1>
             <p className="text-gray-600">Monitor, analyze, and optimize your home energy usage</p>
           </div>
-          
+
           <div className="flex items-center mt-4 md:mt-0 space-x-2">
-            <button 
+            <button
               onClick={() => setTimeRange('daily')}
-              className={`px-4 py-2 rounded-lg transition-colors ${
-                timeRange === 'daily' 
-                  ? 'bg-emerald-500 text-white' 
+              className={`px-4 py-2 rounded-lg transition-colors ${timeRange === 'daily'
+                  ? 'bg-emerald-500 text-white'
                   : 'bg-white text-gray-700 hover:bg-gray-100'
-              }`}
+                }`}
             >
               Today
             </button>
-            <button 
+            <button
               onClick={() => setTimeRange('weekly')}
-              className={`px-4 py-2 rounded-lg transition-colors ${
-                timeRange === 'weekly' 
-                  ? 'bg-emerald-500 text-white' 
+              className={`px-4 py-2 rounded-lg transition-colors ${timeRange === 'weekly'
+                  ? 'bg-emerald-500 text-white'
                   : 'bg-white text-gray-700 hover:bg-gray-100'
-              }`}
+                }`}
             >
               This Week
             </button>
           </div>
         </div>
-        
+
         {/* Top Stats Row */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
           <div className="bg-white p-5 rounded-2xl shadow flex items-center justify-between">
@@ -158,7 +206,7 @@ function Dashboard() {
               <Zap size={28} className="text-emerald-600" />
             </div>
           </div>
-          
+
           <div className="bg-white p-5 rounded-2xl shadow flex items-center justify-between">
             <div>
               <p className="text-gray-500 text-sm">Estimated Bill</p>
@@ -172,7 +220,7 @@ function Dashboard() {
               <BarChart3 size={28} className="text-blue-600" />
             </div>
           </div>
-          
+
           <div className="bg-white p-5 rounded-2xl shadow flex items-center justify-between">
             <div>
               <p className="text-gray-500 text-sm">Energy Efficiency Score</p>
@@ -206,11 +254,11 @@ function Dashboard() {
               <div className="h-72 w-full">
                 {/* Energy consumption chart visualization */}
                 <div className="bg-gray-50 h-full rounded-lg flex items-end px-4 py-2 space-x-4">
-                  {timeRange === 'daily' ? 
+                  {timeRange === 'daily' ?
                     mockEnergyData.daily.map((hour, i) => (
                       <div key={i} className="flex flex-col items-center flex-1">
-                        <div 
-                          className="w-full bg-emerald-500 rounded-t-lg transition-all duration-500" 
+                        <div
+                          className="w-full bg-emerald-500 rounded-t-lg transition-all duration-500"
                           style={{ height: `${hour.usage * 10}%` }}
                         ></div>
                         <span className="text-xs mt-2 text-gray-600">{hour.time}</span>
@@ -219,8 +267,8 @@ function Dashboard() {
                     :
                     mockEnergyData.weekly.map((day, i) => (
                       <div key={i} className="flex flex-col items-center flex-1">
-                        <div 
-                          className="w-full bg-blue-500 rounded-t-lg transition-all duration-500" 
+                        <div
+                          className="w-full bg-blue-500 rounded-t-lg transition-all duration-500"
                           style={{ height: `${day.usage * 3}%` }}
                         ></div>
                         <span className="text-xs mt-2 text-gray-600">{day.day}</span>
@@ -230,7 +278,7 @@ function Dashboard() {
                 </div>
               </div>
             </div>
-            
+
             {/* Room-wise & Device Usage */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Room-wise Usage */}
@@ -247,8 +295,8 @@ function Dashboard() {
                         <span className="font-medium">{room.usage}%</span>
                       </div>
                       <div className="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
-                        <div 
-                          className="h-full bg-teal-500" 
+                        <div
+                          className="h-full bg-teal-500"
                           style={{ width: `${room.usage}%` }}
                         ></div>
                       </div>
@@ -256,7 +304,7 @@ function Dashboard() {
                   ))}
                 </div>
               </div>
-              
+
               {/* Device Usage */}
               <div className="bg-white p-5 rounded-2xl shadow">
                 <h2 className="text-xl font-semibold text-gray-800 flex items-center mb-4">
@@ -267,20 +315,18 @@ function Dashboard() {
                   {mockEnergyData.deviceData.map((device, i) => (
                     <div key={i} className="flex items-center justify-between">
                       <div className="flex items-center">
-                        <div className={`w-2 h-2 rounded-full mr-2 ${
-                          device.status === 'high' ? 'bg-red-500' : 
-                          device.status === 'normal' ? 'bg-yellow-500' : 'bg-green-500'
-                        }`}></div>
+                        <div className={`w-2 h-2 rounded-full mr-2 ${device.status === 'high' ? 'bg-red-500' :
+                            device.status === 'normal' ? 'bg-yellow-500' : 'bg-green-500'
+                          }`}></div>
                         <span className="text-gray-700">{device.name}</span>
                       </div>
                       <div className="flex items-center">
                         <span className="text-sm font-medium mr-2">{device.usage}%</span>
                         <div className="w-16 h-2 bg-gray-100 rounded-full overflow-hidden">
-                          <div 
-                            className={`h-full ${
-                              device.status === 'high' ? 'bg-red-500' : 
-                              device.status === 'normal' ? 'bg-yellow-500' : 'bg-green-500'
-                            }`}
+                          <div
+                            className={`h-full ${device.status === 'high' ? 'bg-red-500' :
+                                device.status === 'normal' ? 'bg-yellow-500' : 'bg-green-500'
+                              }`}
                             style={{ width: `${device.usage}%` }}
                           ></div>
                         </div>
@@ -291,7 +337,7 @@ function Dashboard() {
               </div>
             </div>
           </div>
-          
+
           {/* Right Column - Insights and Actions */}
           <div className="space-y-6">
             {/* AI Energy Tips */}
@@ -310,17 +356,16 @@ function Dashboard() {
               <div className="flex justify-center mt-3">
                 <div className="flex space-x-1">
                   {energyTips.map((_, i) => (
-                    <div 
-                      key={i} 
-                      className={`w-2 h-2 rounded-full transition-colors ${
-                        i === tipIndex ? 'bg-emerald-500' : 'bg-gray-300'
-                      }`}
+                    <div
+                      key={i}
+                      className={`w-2 h-2 rounded-full transition-colors ${i === tipIndex ? 'bg-emerald-500' : 'bg-gray-300'
+                        }`}
                     ></div>
                   ))}
                 </div>
               </div>
             </div>
-            
+
             {/* Wastage Alerts */}
             <div className="bg-white p-5 rounded-2xl shadow">
               <h2 className="text-xl font-semibold text-gray-800 flex items-center mb-4">
@@ -351,7 +396,7 @@ function Dashboard() {
                 ))}
               </div>
             </div>
-            
+
             {/* Gamification */}
             <div className="bg-white p-5 rounded-2xl shadow">
               <h2 className="text-xl font-semibold text-gray-800 flex items-center mb-4">
@@ -364,8 +409,8 @@ function Dashboard() {
                   <span>{mockEnergyData.gamification.nextLevel}</span>
                 </div>
                 <div className="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
-                  <div 
-                    className="h-full bg-purple-500" 
+                  <div
+                    className="h-full bg-purple-500"
                     style={{ width: `${(mockEnergyData.gamification.points / 400) * 100}%` }}
                   ></div>
                 </div>
@@ -373,7 +418,7 @@ function Dashboard() {
                   {mockEnergyData.gamification.pointsToNextLevel} points to next level
                 </div>
               </div>
-              
+
               <div className="bg-blue-50 p-3 rounded-lg mb-3">
                 <div className="font-medium text-blue-700 flex items-center mb-1">
                   <Calendar size={14} className="mr-1" />
@@ -391,7 +436,7 @@ function Dashboard() {
                   </button>
                 </div>
               </div>
-              
+
               <div className="flex items-center">
                 <div className="flex items-center mr-4">
                   <div className="bg-green-100 p-1 rounded-full mr-1">
@@ -401,7 +446,7 @@ function Dashboard() {
                     <span className="font-medium">{mockEnergyData.gamification.streakDays}-day</span> streak
                   </div>
                 </div>
-                
+
                 <div className="flex items-center">
                   <div className="bg-purple-100 p-1 rounded-full mr-1">
                     <Thermometer size={14} className="text-purple-600" />
@@ -411,10 +456,21 @@ function Dashboard() {
                   </div>
                 </div>
               </div>
+
+              {/* View Leaderboard Button */}
+              <div className="mt-4">
+                <button
+                  onClick={() => navigateTo("/leaderboard")}
+                  className="w-full bg-purple-100 text-purple-700 py-2 rounded-lg flex items-center justify-center hover:bg-purple-200 transition-colors"
+                >
+                  <Award size={16} className="mr-2" />
+                  View Community Leaderboard
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        
+
         {/* Footer */}
         <div className="mt-6 flex justify-between items-center text-sm text-gray-500">
           <div className="flex items-center">
@@ -422,7 +478,7 @@ function Dashboard() {
             <span>Data refreshed: Today, 2:45 PM</span>
           </div>
           <div>
-            <a href="#" className="text-emerald-600 hover:underline">View detailed reports</a>
+            <a href="/detailed-report" className="text-emerald-600 hover:underline">View detailed reports</a>
           </div>
         </div>
       </div>
