@@ -9,6 +9,7 @@ import ForgotPassword from './components/ForgotPassword'
 import React from 'react'
 import SignUp from './components/Signup'
 import DetailedReports from './components/DetailedReport'
+import AdvanceEnergySettings from './components/AdvanceEnergySettings'
 function App() {
 
   return (
@@ -22,7 +23,7 @@ function App() {
         <Route path="/forgot" element={<ForgotPassword />} />
         <Route path="/tips" element={<Tips />} />
         <Route path="/detailed-report" element={<DetailedReports />} /> 
-        
+        <Route path='/advance-energy-settings' element={<AdvanceEnergySettings/>} />
       </Routes>
     </Router>
   )
