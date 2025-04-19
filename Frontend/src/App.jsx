@@ -9,6 +9,7 @@ import ForgotPassword from "./components/ForgotPassword";
 import React, { useEffect, useState } from "react";
 import SignUp from "./components/Signup";
 import DetailedReports from "./components/DetailedReport";
+import AdvanceEnergySettings from "./components/AdvanceEnergySettings";
 import axios from "axios";
 
 function App() {
@@ -40,6 +41,10 @@ function App() {
         <Route path="/forgot" element={<ForgotPassword />} />
         <Route path="/tips" element={<Tips />} />
         <Route path="/detailed-report" element={<DetailedReports />} />
+        <Route
+          path="/advance-energy-settings"
+          element={<AdvanceEnergySettings />}
+        />
       </Routes>
     </Router>
   );

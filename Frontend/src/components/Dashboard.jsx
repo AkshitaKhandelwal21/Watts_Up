@@ -156,18 +156,18 @@ function Dashboard({ chartData = {} }) {
               <span>Dashboard</span>
             </button>
             <button
-              onClick={() => navigateTo("/profile")}
-              className="flex items-center px-3 py-2 rounded-lg bg-purple-100 text-purple-700 hover:bg-purple-200 transition-colors"
-            >
-              <User size={18} className="mr-1" />
-              <span>Profile</span>
-            </button>
-            <button
               onClick={() => navigateTo("/leaderboard")}
               className="flex items-center px-3 py-2 rounded-lg bg-emerald-100 text-emerald-700 hover:bg-emerald-200 transition-colors"
             >
               <Award size={18} className="mr-1" />
               <span>Leaderboard</span>
+            </button>
+            <button
+              onClick={() => navigateTo("/profile")}
+              className="flex items-center px-3 py-2 rounded-lg bg-purple-100 text-purple-700 hover:bg-purple-200 transition-colors"
+            >
+              <User size={18} className="mr-1" />
+              <span>Profile</span>
             </button>
             <button
               onClick={handleLogout}
