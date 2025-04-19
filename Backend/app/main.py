@@ -10,11 +10,28 @@ from models import Base
 from db import engine
 # from llm_model.llm_routes import LLMrouter
 import os
+from fastapi.middleware.cors import CORSMiddleware
+
+    
+
 
 # BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 
 
 app = FastAPI()
+
+#CORS SETUP
+origins = [
+    "http://localhost:5173",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # app.mount("/static", StaticFiles(directory=os.path.join(BASE_DIR, "static")), name="static")
 # templates = Jinja2Templates(directory=os.path.join(BASE_DIR, "templates"))
